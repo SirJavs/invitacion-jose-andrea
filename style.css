@@ -218,7 +218,6 @@ body.is-intro-active {
   font-size: clamp(3rem, 8vw, 5.4rem);
   font-weight: 400;
   line-height: 1;
-  text-align: center;
   transition: opacity 350ms ease, transform 350ms ease;
 }
 
@@ -261,7 +260,6 @@ body.is-intro-active {
 }
 
 .envelope {
-  --paper-texture: url("papel-artesanal.jpg");
   position: absolute;
   inset: 0;
   width: 100%;
@@ -289,7 +287,7 @@ body.is-intro-active {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background-image: linear-gradient(145deg, rgba(220, 202, 175, 0.4), rgba(176, 145, 104, 0.52)), var(--paper-texture);
+  background: linear-gradient(145deg, #d9c9b0, #c6b294);
 }
 
 .envelope__letter {
@@ -336,7 +334,7 @@ body.is-intro-active {
   position: absolute;
   inset: 0;
   z-index: 6;
-  background-image: linear-gradient(155deg, rgba(245, 234, 216, 0.3), rgba(185, 150, 103, 0.46)), var(--paper-texture);
+  background: linear-gradient(155deg, #e8dccb, #c6b091);
   clip-path: polygon(0 0, 100% 0, 50% 58%);
   transform: rotateX(0deg);
   transform-origin: top center;
@@ -347,45 +345,33 @@ body.is-intro-active {
   position: absolute;
   inset: 0;
   z-index: 4;
-  background-blend-mode: multiply;
-  background-position: center;
-  background-size: cover;
   pointer-events: none;
 }
 
-.envelope__back,
-.envelope__flap {
-  background-blend-mode: multiply;
-  background-position: center;
-  background-size: cover;
-}
-
 .envelope__front--left {
-  background-image: linear-gradient(60deg, rgba(205, 178, 139, 0.42), rgba(242, 228, 207, 0.28)), var(--paper-texture);
+  background: linear-gradient(60deg, #d8c6aa, #e6d8c4);
   clip-path: polygon(0 0, 55% 52%, 0 100%);
 }
 
 .envelope__front--right {
-  background-image: linear-gradient(-60deg, rgba(199, 169, 127, 0.42), rgba(245, 231, 210, 0.26)), var(--paper-texture);
+  background: linear-gradient(-60deg, #d5c2a5, #eadcc8);
   clip-path: polygon(100% 0, 45% 52%, 100% 100%);
 }
 
 .envelope__front--bottom {
-  background-image: linear-gradient(0deg, rgba(211, 187, 153, 0.4), rgba(247, 235, 217, 0.22)), var(--paper-texture);
+  background: linear-gradient(0deg, #ddcdb6, #eadfce);
   clip-path: polygon(0 100%, 50% 45%, 100% 100%);
 }
 
 .envelope__seal {
-  display: flex;
+  display: grid;
   position: absolute;
   top: 48%;
   left: 50%;
   z-index: 7;
   width: 62px;
   height: 62px;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
+  place-items: center;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   color: #f5eee2;
@@ -394,12 +380,11 @@ body.is-intro-active {
   font-family: var(--display);
   font-size: 0.72rem;
   letter-spacing: 0.05em;
-  line-height: 1;
   transform: translate(-50%, -50%);
 }
 
 .envelope__seal span {
-  margin-inline: 0;
+  margin-inline: -6px;
   font-family: var(--script);
   font-size: 1.45em;
 }
