@@ -700,8 +700,7 @@ a {
 }
 
 .story__image img {
-  height: 680px;
-  object-fit: cover;
+  height: auto;
 }
 
 .story__content .eyebrow {
@@ -1022,7 +1021,7 @@ a {
   }
 
   .story__image img {
-    height: min(600px, 80vh);
+    height: auto;
   }
 
   .place__photo {
@@ -1126,7 +1125,7 @@ a {
   }
 
   .story__image img {
-    height: 480px;
+    height: auto;
   }
 
   .story__content {
