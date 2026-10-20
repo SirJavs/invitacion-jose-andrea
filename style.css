@@ -739,9 +739,7 @@ a {
 .place__photo {
   height: 100%;
   min-height: 760px;
-  background:
-    linear-gradient(rgba(29, 49, 41, 0.08), rgba(29, 49, 41, 0.18)),
-    url("boda-hacienda.jpg") 72% center / cover;
+  background: var(--ivory) url("templete-vinuela-acuarela.jpg") center / contain no-repeat;
 }
 
 .place__card {
