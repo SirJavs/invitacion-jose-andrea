@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Invitación de boda de José y Andrea. Consulta todos los detalles de nuestro gran día."
+    />
+    <title>José &amp; Andrea — Nuestra boda</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="is-intro-active">
+    <div class="intro" id="intro" role="dialog" aria-modal="true" aria-labelledby="intro-title">
+      <div class="intro__ornament intro__ornament--left" aria-hidden="true">❧</div>
+      <div class="intro__ornament intro__ornament--right" aria-hidden="true">❧</div>
+
+      <div class="intro__scene">
+        <p class="intro__pretitle">Tenemos algo que contaros</p>
+
+        <button class="envelope" id="open-invitation" type="button" aria-label="Abrir la invitación">
+          <span class="envelope__shadow" aria-hidden="true"></span>
+          <span class="envelope__back" aria-hidden="true"></span>
+          <span class="envelope__letter" aria-hidden="true">
+            <span class="envelope__initials">J <i>&amp;</i> A</span>
+            <span class="envelope__date">03 · 04 · 2027</span>
+          </span>
+          <span class="envelope__flap" aria-hidden="true"></span>
+          <span class="envelope__front envelope__front--left" aria-hidden="true"></span>
+          <span class="envelope__front envelope__front--right" aria-hidden="true"></span>
+          <span class="envelope__front envelope__front--bottom" aria-hidden="true"></span>
+          <span class="envelope__seal" aria-hidden="true">J<span>&amp;</span>A</span>
+        </button>
+
+        <h1 class="intro__title" id="intro-title">José <span>&amp;</span> Andrea</h1>
+        <p class="intro__hint">Pulsa el sobre para abrir la invitación</p>
+      </div>
+    </div>
+
+    <div class="music-controls" id="music-controls" aria-label="Controles de música" hidden>
+      <button class="music-button" id="music-toggle" type="button" aria-label="Reproducir música">
+        <span class="music-button__symbol" id="music-play-symbol" aria-hidden="true">▶</span>
+      </button>
+      <button class="music-button music-button--sound" id="music-mute" type="button" aria-label="Silenciar música">
+        <span id="music-sound-symbol" aria-hidden="true">♪</span>
+      </button>
+    </div>
+    <div class="youtube-player" id="youtube-player" aria-hidden="true"></div>
+
+    <header class="hero" id="inicio" tabindex="-1">
+      <nav class="nav container" aria-label="Navegación principal">
+        <a class="nav__monogram" href="#inicio" aria-label="Volver al inicio">J<span>&amp;</span>A</a>
+        <div class="nav__links">
+          <a href="#historia">Nuestra historia</a>
+          <a href="#programa">El gran día</a>
+          <a href="#confirmacion">Confirmar</a>
+        </div>
+      </nav>
+
+      <div class="hero__veil"></div>
+      <div class="hero__content container">
+        <p class="eyebrow eyebrow--light">Nos casamos</p>
+        <h1><span>José</span><b>&amp;</b><span>Andrea</span></h1>
+        <p class="hero__date">03 · 04 · 2027</p>
+        <a class="scroll-cue" href="#cuenta-atras" aria-label="Descubrir la invitación">
+          <span>Descubre la invitación</span>
+          <i aria-hidden="true">↓</i>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="countdown section" id="cuenta-atras">
+        <div class="container container--narrow">
+          <p class="eyebrow">Cada vez queda menos</p>
+          <h2 class="section-title">Cuenta atrás</h2>
+          <div class="countdown__grid" data-countdown="2027-04-03T12:30:00" aria-label="Cuenta atrás para la boda">
+            <div><strong data-unit="days">000</strong><span>Días</span></div>
+            <div><strong data-unit="hours">00</strong><span>Horas</span></div>
+            <div><strong data-unit="minutes">00</strong><span>Minutos</span></div>
+            <div><strong data-unit="seconds">00</strong><span>Segundos</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="story section" id="historia">
+        <div class="container story__grid">
+          <div class="story__image image-frame">
+            <img
+              src="boda-hacienda.jpg"
+              alt="Una pareja celebrando su boda al aire libre"
+            />
+          </div>
+          <div class="story__content">
+            <span class="botanical" aria-hidden="true">❧</span>
+            <p class="eyebrow">Nuestra boda</p>
+            <h2 class="section-title section-title--left">Una historia que continúa</h2>
+            <p>
+              Después de tantos momentos compartidos, hemos decidido celebrar el comienzo de una nueva etapa.
+              Nos haría muchísima ilusión que formaras parte de este día tan especial.
+            </p>
+            <p class="signature">Con cariño, José &amp; Andrea</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="place section">
+        <div class="place__photo" role="img" aria-label="B Bou La Viñuela Boutique Hotel, rodeado de naturaleza"></div>
+        <div class="place__card">
+          <p class="eyebrow">La ceremonia</p>
+          <h2 class="section-title">B Bou La Viñuela Boutique Hotel</h2>
+          <p class="place__time">Sábado, 03 de abril de 2027 · 12:30 h</p>
+          <p>B Bou Hotel La Viñuela &amp; Spa<br />Vereda de Vélez, s/n · 29712 Málaga</p>
+          <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=B%20Bou%20Hotel%20La%20Vi%C3%B1uela%20%26%20Spa%2C%20Vereda%20de%20V%C3%A9lez%2C%20SN%2C%2029712%2C%20M%C3%A1laga" target="_blank" rel="noopener noreferrer">
+            Ver ubicación <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="schedule section" id="programa">
+        <div class="container container--narrow">
+          <p class="eyebrow">Todo lo que hemos preparado</p>
+          <h2 class="section-title">Plan del día</h2>
+
+          <div class="timeline">
+            <article class="timeline__item">
+              <div class="timeline__icon" aria-hidden="true">♡</div>
+              <time datetime="2027-04-03T12:30">12:30 h</time>
+              <h3>Ceremonia</h3>
+              <p>El comienzo de nuestra aventura.</p>
+            </article>
+            <article class="timeline__item">
+              <div class="timeline__icon" aria-hidden="true">♧</div>
+              <time datetime="2027-04-03T14:00">14:00 h</time>
+              <h3>Cóctel</h3>
+              <p>Brindis, abrazos y reencuentros.</p>
+            </article>
+            <article class="timeline__item">
+              <div class="timeline__icon" aria-hidden="true">♢</div>
+              <time datetime="2027-04-03T15:30">15:30 h</time>
+              <h3>Banquete</h3>
+              <p>Una mesa para celebrar juntos.</p>
+            </article>
+            <article class="timeline__item">
+              <div class="timeline__icon" aria-hidden="true">♪</div>
+              <time datetime="2027-04-03T19:00">19:00 h</time>
+              <h3>Fiesta</h3>
+              <p>Ahora sí: ¡a darlo todo!</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="details section">
+        <div class="container">
+          <div class="details__heading">
+            <p class="eyebrow">Información práctica</p>
+            <h2 class="section-title">Para disfrutar sin preocupaciones</h2>
+          </div>
+
+          <div class="details__grid">
+            <article class="detail-card">
+              <span class="detail-card__number">01</span>
+              <h3>Autobús</h3>
+              <p>Más adelante compartiremos el punto de salida, los horarios de ida y los regresos disponibles.</p>
+              <a href="#confirmacion">Reservar plaza</a>
+            </article>
+            <article class="detail-card detail-card--accent">
+              <span class="detail-card__number">02</span>
+              <h3>Alojamiento</h3>
+              <p>Hemos seleccionado dos hoteles cercanos con tarifa especial para nuestros invitados.</p>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">Ver hoteles</a>
+            </article>
+            <article class="detail-card">
+              <span class="detail-card__number">03</span>
+              <h3>Regalo</h3>
+              <p>Vuestra compañía es lo más importante. Si además queréis ayudarnos con el viaje, escribidnos.</p>
+              <a href="mailto:hola@joseyandrea.es">Contactar</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="rsvp section" id="confirmacion">
+        <div class="container container--narrow rsvp__content">
+          <span class="botanical botanical--light" aria-hidden="true">❦</span>
+          <p class="eyebrow eyebrow--light">Antes del 31 de Diciembre</p>
+          <h2>¿Nos acompañas?</h2>
+          <p>
+            Confírmanos tu asistencia y cuéntanos si necesitas autobús, tienes alguna alergia o sigues una dieta
+            especial.
+          </p>
+          <a class="button button--light" href="mailto:hola@joseyandrea.es?subject=Confirmación%20de%20asistencia">
+            Confirmar asistencia
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="footer__names" href="#inicio">José <span>&amp;</span> Andrea</a>
+      <p>03 de abril de 2027 · Málaga</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
