@@ -503,8 +503,8 @@ a {
   overflow: hidden;
   color: #fff;
   background:
-    linear-gradient(rgba(93, 120, 72, 0.24), rgba(93, 120, 72, 0.56)),
-    url("boda-hacienda.jpg") center 48% / cover;
+    linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.28)),
+    url("vinuela-panorama-acuarela.jpg") center / cover;
 }
 
 .hero::after {
@@ -519,7 +519,7 @@ a {
 .hero__veil {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 50% 40%, transparent 0, rgba(93, 120, 72, 0.12) 48%, rgba(93, 120, 72, 0.5) 100%);
+  background: radial-gradient(circle at 50% 40%, transparent 0, rgba(0, 0, 0, 0.06) 52%, rgba(0, 0, 0, 0.28) 100%);
 }
 
 .nav {
