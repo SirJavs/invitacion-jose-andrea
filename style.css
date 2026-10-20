@@ -260,10 +260,7 @@ body.is-intro-active {
 }
 
 .envelope {
-  --paper-texture:
-    radial-gradient(circle at 28% 34%, rgba(79, 57, 32, 0.2) 0 0.7px, transparent 1px),
-    radial-gradient(circle at 72% 66%, rgba(255, 255, 255, 0.72) 0 0.7px, transparent 1px),
-    repeating-linear-gradient(94deg, rgba(91, 66, 38, 0.07) 0 1px, transparent 1px 5px);
+  --paper-texture: url("papel-artesanal.jpg");
   position: absolute;
   inset: 0;
   width: 100%;
@@ -291,7 +288,7 @@ body.is-intro-active {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background-image: var(--paper-texture), linear-gradient(145deg, #d9c9b0, #c6b294);
+  background-image: linear-gradient(145deg, rgba(220, 202, 175, 0.4), rgba(176, 145, 104, 0.52)), var(--paper-texture);
 }
 
 .envelope__letter {
@@ -338,7 +335,7 @@ body.is-intro-active {
   position: absolute;
   inset: 0;
   z-index: 6;
-  background-image: var(--paper-texture), linear-gradient(155deg, #e8dccb, #c6b091);
+  background-image: linear-gradient(155deg, rgba(245, 234, 216, 0.3), rgba(185, 150, 103, 0.46)), var(--paper-texture);
   clip-path: polygon(0 0, 100% 0, 50% 58%);
   transform: rotateX(0deg);
   transform-origin: top center;
@@ -349,29 +346,31 @@ body.is-intro-active {
   position: absolute;
   inset: 0;
   z-index: 4;
-  background-blend-mode: multiply, screen, multiply, normal;
-  background-size: 9px 11px, 13px 17px, 37px 100%, auto;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
   pointer-events: none;
 }
 
 .envelope__back,
 .envelope__flap {
-  background-blend-mode: multiply, screen, multiply, normal;
-  background-size: 9px 11px, 13px 17px, 37px 100%, auto;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
 }
 
 .envelope__front--left {
-  background-image: var(--paper-texture), linear-gradient(60deg, #d8c6aa, #e6d8c4);
+  background-image: linear-gradient(60deg, rgba(205, 178, 139, 0.42), rgba(242, 228, 207, 0.28)), var(--paper-texture);
   clip-path: polygon(0 0, 55% 52%, 0 100%);
 }
 
 .envelope__front--right {
-  background-image: var(--paper-texture), linear-gradient(-60deg, #d5c2a5, #eadcc8);
+  background-image: linear-gradient(-60deg, rgba(199, 169, 127, 0.42), rgba(245, 231, 210, 0.26)), var(--paper-texture);
   clip-path: polygon(100% 0, 45% 52%, 100% 100%);
 }
 
 .envelope__front--bottom {
-  background-image: var(--paper-texture), linear-gradient(0deg, #ddcdb6, #eadfce);
+  background-image: linear-gradient(0deg, rgba(211, 187, 153, 0.4), rgba(247, 235, 217, 0.22)), var(--paper-texture);
   clip-path: polygon(0 100%, 50% 45%, 100% 100%);
 }
 
