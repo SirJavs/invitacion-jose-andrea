@@ -810,6 +810,11 @@ a {
   content: "";
 }
 
+.timeline__item:last-child::before {
+  display: none;
+  content: none;
+}
+
 .timeline__item:nth-child(odd)::before {
   right: -1px;
 }
