@@ -301,7 +301,7 @@ body.is-intro-active {
 }
 
 .envelope__initials i {
-  color: var(--sage);
+  color: inherit;
   font-family: var(--script);
   font-size: 1.25em;
   font-style: normal;
@@ -593,16 +593,18 @@ a {
   font-family: var(--script);
   font-size: clamp(5rem, 12vw, 9.5rem);
   font-weight: 400;
-  line-height: 0.62;
+  line-height: 0.8;
   text-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
 }
 
 .hero h1 b {
-  margin: 0.1em 0;
+  display: block;
+  margin: 0.14em 0;
   color: rgba(255, 255, 255, 0.8);
   font-family: var(--serif);
   font-size: 0.32em;
   font-weight: 400;
+  line-height: 1;
 }
 
 .hero__date {
