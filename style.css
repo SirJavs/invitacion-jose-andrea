@@ -693,7 +693,7 @@ a {
 
 .image-frame::before {
   position: absolute;
-  inset: 26px -24px -26px 24px;
+  inset: -18px;
   z-index: -1;
   border: 1px solid var(--sage);
   content: "";
@@ -1121,7 +1121,7 @@ a {
   }
 
   .image-frame::before {
-    inset: 14px -10px -14px 10px;
+    inset: -10px;
   }
 
   .story__image img {
