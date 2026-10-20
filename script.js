@@ -40,7 +40,7 @@ window.onYouTubeIframeAPIReady = function () {
     events: {
       onReady: () => {
         musicPlayerReady = true;
-        musicPlayer.setVolume(3);
+        musicPlayer.setVolume(10);
         if (invitationOpened) musicControls.hidden = false;
         if (musicShouldPlay) musicPlayer.playVideo();
         updateMusicControls();
