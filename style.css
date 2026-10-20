@@ -1,16 +1,16 @@
 :root {
-  --ink: #23332e;
-  --forest: #284a3f;
-  --sage: #849b8b;
-  --mist: #dfe7df;
+  --ink: #5d7848;
+  --forest: #5d7848;
+  --sage: #5d7848;
+  --mist: #5d7848;
   --ivory: #f7f3eb;
   --paper: #fffdf8;
   --sand: #d5c5ae;
-  --line: rgba(40, 74, 63, 0.2);
+  --line: rgba(93, 120, 72, 0.2);
   --serif: Baskerville, "Baskerville Old Face", Georgia, serif;
   --display: Didot, "Bodoni 72", "Times New Roman", serif;
   --script: "Snell Roundhand", "Segoe Script", "Apple Chancery", cursive;
-  --shadow: 0 24px 70px rgba(27, 43, 37, 0.14);
+  --shadow: 0 24px 70px rgba(93, 120, 72, 0.14);
 }
 
 *,
@@ -48,8 +48,8 @@ body.is-intro-active {
   padding: 7px;
   border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 999px;
-  background: rgba(35, 51, 46, 0.84);
-  box-shadow: 0 10px 32px rgba(18, 31, 26, 0.22);
+  background: rgba(93, 120, 72, 0.84);
+  box-shadow: 0 10px 32px rgba(93, 120, 72, 0.22);
   backdrop-filter: blur(12px);
   animation: music-controls-arrival 500ms ease both;
 }
@@ -157,7 +157,7 @@ body.is-intro-active {
 .intro::before {
   position: absolute;
   inset: 18px;
-  border: 1px solid rgba(40, 74, 63, 0.2);
+  border: 1px solid rgba(93, 120, 72, 0.2);
   content: "";
   pointer-events: none;
 }
@@ -184,7 +184,7 @@ body.is-intro-active {
   left: 20px;
   z-index: 9;
   margin: 0;
-  color: rgba(40, 74, 63, 0.7);
+  color: rgba(93, 120, 72, 0.7);
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.24em;
@@ -217,7 +217,7 @@ body.is-intro-active {
   left: 20px;
   z-index: 9;
   margin: 0;
-  color: #707a75;
+  color: #5d7848;
   font-size: 0.72rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -226,7 +226,7 @@ body.is-intro-active {
 
 .intro__ornament {
   position: absolute;
-  color: rgba(91, 118, 102, 0.16);
+  color: rgba(93, 120, 72, 0.16);
   font-size: clamp(11rem, 25vw, 25rem);
   line-height: 1;
   pointer-events: none;
@@ -260,7 +260,7 @@ body.is-intro-active {
 }
 
 .envelope:focus-visible {
-  outline: 3px solid rgba(40, 74, 63, 0.65);
+  outline: 3px solid rgba(93, 120, 72, 0.65);
   outline-offset: -12px;
 }
 
@@ -286,11 +286,11 @@ body.is-intro-active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(40, 74, 63, 0.18);
+  border: 1px solid rgba(93, 120, 72, 0.18);
   background:
     linear-gradient(rgba(255, 253, 248, 0.9), rgba(255, 253, 248, 0.9)),
-    repeating-linear-gradient(45deg, transparent 0 8px, rgba(40, 74, 63, 0.04) 8px 9px);
-  box-shadow: 0 8px 24px rgba(37, 51, 45, 0.12);
+    repeating-linear-gradient(45deg, transparent 0 8px, rgba(93, 120, 72, 0.04) 8px 9px);
+  box-shadow: 0 8px 24px rgba(93, 120, 72, 0.12);
   transform: translateX(-50%) translateY(0);
 }
 
@@ -359,7 +359,7 @@ body.is-intro-active {
   place-items: center;
   border: 0;
   background: transparent;
-  filter: drop-shadow(0 8px 8px rgba(42, 57, 49, 0.28));
+  filter: drop-shadow(0 8px 8px rgba(93, 120, 72, 0.28));
   transform: translate(-50%, -50%);
 }
 
@@ -503,7 +503,7 @@ a {
   overflow: hidden;
   color: #fff;
   background:
-    linear-gradient(rgba(10, 25, 21, 0.24), rgba(10, 25, 21, 0.56)),
+    linear-gradient(rgba(93, 120, 72, 0.24), rgba(93, 120, 72, 0.56)),
     url("boda-hacienda.jpg") center 48% / cover;
 }
 
@@ -519,7 +519,7 @@ a {
 .hero__veil {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 50% 40%, transparent 0, rgba(12, 27, 23, 0.12) 48%, rgba(12, 27, 23, 0.5) 100%);
+  background: radial-gradient(circle at 50% 40%, transparent 0, rgba(93, 120, 72, 0.12) 48%, rgba(93, 120, 72, 0.5) 100%);
 }
 
 .nav {
@@ -539,7 +539,7 @@ a {
 
 .nav__monogram span {
   margin: 0 3px;
-  color: #dfe6dd;
+  color: #5d7848;
   font-family: var(--script);
   font-size: 1.75em;
 }
@@ -709,7 +709,7 @@ a {
 
 .story__content > p:not(.eyebrow, .signature) {
   max-width: 510px;
-  color: #56615d;
+  color: #5d7848;
   font-size: 1.08rem;
 }
 
@@ -870,7 +870,7 @@ a {
 
 .timeline p {
   margin: 0;
-  color: #68716d;
+  color: #5d7848;
 }
 
 .details {
@@ -915,7 +915,7 @@ a {
 }
 
 .detail-card p {
-  color: #5f6965;
+  color: #5d7848;
   font-size: 0.95rem;
 }
 
@@ -938,7 +938,7 @@ a {
   position: relative;
   color: #fff;
   background:
-    linear-gradient(rgba(30, 66, 54, 0.91), rgba(30, 66, 54, 0.94)),
+    linear-gradient(rgba(93, 120, 72, 0.91), rgba(93, 120, 72, 0.94)),
     url("boda-hacienda.jpg") center / cover;
 }
 
@@ -992,7 +992,7 @@ a {
 
 .footer p {
   margin: 0;
-  color: #7a837f;
+  color: #5d7848;
   font-size: 0.68rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
