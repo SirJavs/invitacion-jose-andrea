@@ -801,14 +801,21 @@ a {
   margin-top: 60px;
 }
 
-.timeline::before {
+.timeline__item:not(:last-child)::before {
   position: absolute;
-  top: 30px;
-  bottom: 30px;
-  left: 50%;
+  top: 40px;
+  bottom: -40px;
   width: 1px;
   background: var(--line);
   content: "";
+}
+
+.timeline__item:nth-child(odd)::before {
+  right: -1px;
+}
+
+.timeline__item:nth-child(even)::before {
+  left: 0;
 }
 
 .timeline__item {
@@ -1133,7 +1140,10 @@ a {
     padding: 48px 24px;
   }
 
-  .timeline::before {
+  .timeline__item:not(:last-child)::before,
+  .timeline__item:nth-child(odd)::before,
+  .timeline__item:nth-child(even)::before {
+    right: auto;
     left: 27px;
   }
 
