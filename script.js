@@ -40,7 +40,7 @@ window.onYouTubeIframeAPIReady = function () {
     events: {
       onReady: () => {
         musicPlayerReady = true;
-        musicPlayer.setVolume(20);
+        musicPlayer.setVolume(3);
         if (invitationOpened) musicControls.hidden = false;
         if (musicShouldPlay) musicPlayer.playVideo();
         updateMusicControls();
@@ -66,77 +66,6 @@ window.scrollTo(0, 0);
 pageContent.forEach((element) => { element.inert = true; });
 openButton.focus({ preventScroll: true });
 
-function startPetals() {
-  if (reduceMotion) return;
-
-  const petals = document.querySelector("#hero-petals");
-  const fragment = document.createDocumentFragment();
-  const petalCount = window.matchMedia("(max-width: 620px)").matches ? 18 : 28;
-
-  for (let index = 0; index < petalCount; index += 1) {
-    const petal = document.createElement("span");
-    petal.className = "hero__petal";
-    petal.style.cssText = `
-      left: ${(index + Math.random()) / petalCount * 100}%;
-      --petal-size: ${9 + Math.random() * 10}px;
-      --petal-duration: ${11 + Math.random() * 9}s;
-      --petal-delay: ${-Math.random() * 20}s;
-      --petal-drift: ${-65 + Math.random() * 130}px;
-      --petal-turn: ${180 + Math.random() * 360}deg;
-      --petal-sway: ${2 + Math.random() * 3}s;
-    `;
-    fragment.appendChild(petal);
-  }
-
-  petals.appendChild(fragment);
-  const updateDistance = () => {
-    petals.style.setProperty("--petal-fall-distance", `${invitation.offsetHeight + 80}px`);
-  };
-  updateDistance();
-  new ResizeObserver(updateDistance).observe(invitation);
-
-  let heroIsVisible = true;
-  const updatePlayback = () => {
-    petals.classList.toggle("is-active", heroIsVisible && !document.hidden);
-  };
-  new IntersectionObserver(([entry]) => {
-    heroIsVisible = entry.isIntersecting;
-    updatePlayback();
-  }).observe(invitation);
-  document.addEventListener("visibilitychange", updatePlayback);
-  updatePlayback();
-}
-
-function startScrollReveal() {
-  if (reduceMotion || !("IntersectionObserver" in window)) return;
-
-  const elements = document.querySelectorAll(`
-    .hero__content > *,
-    .countdown .eyebrow, .countdown .section-title, .countdown__grid > div,
-    .story__image, .story__content > *,
-    .place__photo, .place__card > *,
-    .schedule .eyebrow, .schedule .section-title, .timeline__item,
-    .details__heading > *, .detail-card,
-    .rsvp__content > *, .footer > *
-  `);
-  const siblingDelays = new Map();
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add("is-visible");
-      observer.unobserve(entry.target);
-    });
-  }, { threshold: 0.08, rootMargin: "0px 0px -40px 0px" });
-
-  elements.forEach((element) => {
-    const siblingIndex = siblingDelays.get(element.parentElement) || 0;
-    siblingDelays.set(element.parentElement, siblingIndex + 1);
-    element.style.setProperty("--reveal-delay", `${Math.min(siblingIndex, 3) * 90}ms`);
-    element.classList.add("scroll-reveal");
-    observer.observe(element);
-  });
-}
-
 function openInvitation() {
   if (intro.classList.contains("is-opening")) return;
 
@@ -151,9 +80,7 @@ function openInvitation() {
     document.body.classList.remove("is-intro-active");
     pageContent.forEach((element) => { element.inert = false; });
     invitationOpened = true;
-    startScrollReveal();
-    startPetals();
-    if (musicPlayerReady) musicControls.hidden = false;
+    musicControls.hidden = false;
     window.scrollTo(0, 0);
     invitation.focus({ preventScroll: true });
   }, reduceMotion ? 120 : 1900);
