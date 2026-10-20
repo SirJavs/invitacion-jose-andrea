@@ -1,4 +1,4 @@
-# Invitación de boda — José y Andrea
+# Invitación de boda — Andrea y José
 
 Invitación digital para el 3 de abril de 2027.
 
