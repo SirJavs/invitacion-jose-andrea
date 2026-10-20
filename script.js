@@ -66,6 +66,47 @@ window.scrollTo(0, 0);
 pageContent.forEach((element) => { element.inert = true; });
 openButton.focus({ preventScroll: true });
 
+function startPetals() {
+  if (reduceMotion) return;
+
+  const petals = document.querySelector("#hero-petals");
+  const fragment = document.createDocumentFragment();
+  const petalCount = window.matchMedia("(max-width: 620px)").matches ? 18 : 28;
+
+  for (let index = 0; index < petalCount; index += 1) {
+    const petal = document.createElement("span");
+    petal.className = "hero__petal";
+    petal.style.cssText = `
+      left: ${(index + Math.random()) / petalCount * 100}%;
+      --petal-size: ${9 + Math.random() * 10}px;
+      --petal-duration: ${11 + Math.random() * 9}s;
+      --petal-delay: ${-Math.random() * 20}s;
+      --petal-drift: ${-65 + Math.random() * 130}px;
+      --petal-turn: ${180 + Math.random() * 360}deg;
+      --petal-sway: ${2 + Math.random() * 3}s;
+    `;
+    fragment.appendChild(petal);
+  }
+
+  petals.appendChild(fragment);
+  const updateDistance = () => {
+    petals.style.setProperty("--petal-fall-distance", `${invitation.offsetHeight + 80}px`);
+  };
+  updateDistance();
+  new ResizeObserver(updateDistance).observe(invitation);
+
+  let heroIsVisible = true;
+  const updatePlayback = () => {
+    petals.classList.toggle("is-active", heroIsVisible && !document.hidden);
+  };
+  new IntersectionObserver(([entry]) => {
+    heroIsVisible = entry.isIntersecting;
+    updatePlayback();
+  }).observe(invitation);
+  document.addEventListener("visibilitychange", updatePlayback);
+  updatePlayback();
+}
+
 function openInvitation() {
   if (intro.classList.contains("is-opening")) return;
 
@@ -80,6 +121,7 @@ function openInvitation() {
     document.body.classList.remove("is-intro-active");
     pageContent.forEach((element) => { element.inert = false; });
     invitationOpened = true;
+    startPetals();
     if (musicPlayerReady) musicControls.hidden = false;
     window.scrollTo(0, 0);
     invitation.focus({ preventScroll: true });
