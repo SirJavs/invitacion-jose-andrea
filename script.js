@@ -107,6 +107,36 @@ function startPetals() {
   updatePlayback();
 }
 
+function startScrollReveal() {
+  if (reduceMotion || !("IntersectionObserver" in window)) return;
+
+  const elements = document.querySelectorAll(`
+    .hero__content > *,
+    .countdown .eyebrow, .countdown .section-title, .countdown__grid > div,
+    .story__image, .story__content > *,
+    .place__photo, .place__card > *,
+    .schedule .eyebrow, .schedule .section-title, .timeline__item,
+    .details__heading > *, .detail-card,
+    .rsvp__content > *, .footer > *
+  `);
+  const siblingDelays = new Map();
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.08, rootMargin: "0px 0px -40px 0px" });
+
+  elements.forEach((element) => {
+    const siblingIndex = siblingDelays.get(element.parentElement) || 0;
+    siblingDelays.set(element.parentElement, siblingIndex + 1);
+    element.style.setProperty("--reveal-delay", `${Math.min(siblingIndex, 3) * 90}ms`);
+    element.classList.add("scroll-reveal");
+    observer.observe(element);
+  });
+}
+
 function openInvitation() {
   if (intro.classList.contains("is-opening")) return;
 
@@ -121,6 +151,7 @@ function openInvitation() {
     document.body.classList.remove("is-intro-active");
     pageContent.forEach((element) => { element.inert = false; });
     invitationOpened = true;
+    startScrollReveal();
     startPetals();
     if (musicPlayerReady) musicControls.hidden = false;
     window.scrollTo(0, 0);
