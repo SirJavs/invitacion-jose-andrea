@@ -808,30 +808,7 @@ a {
 }
 
 .place__photo--church {
-  display: grid;
-  position: relative;
-  place-items: center;
-  overflow: hidden;
-  background:
-    radial-gradient(circle at 50% 44%, rgba(255, 255, 255, 0.85), transparent 42%),
-    repeating-linear-gradient(0deg, rgba(93, 120, 72, 0.025) 0 1px, transparent 1px 5px),
-    var(--ivory);
-}
-
-.place__photo--church::before {
-  position: absolute;
-  inset: 34px;
-  border: 1px solid rgba(93, 120, 72, 0.28);
-  content: "";
-}
-
-.place__placeholder-label {
-  position: relative;
-  color: rgba(93, 120, 72, 0.68);
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+  background: var(--ivory) url("iglesia-santa-maria-mar-acuarela.jpg") center / contain no-repeat;
 }
 
 .button {
@@ -1221,10 +1198,6 @@ a {
 
   .place--ceremony .place__card {
     margin-top: -80px;
-  }
-
-  .place__photo--church::before {
-    inset: 18px;
   }
 
   .timeline__item:not(:last-child)::before,
