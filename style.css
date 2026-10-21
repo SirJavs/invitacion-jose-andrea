@@ -272,7 +272,11 @@ body.is-intro-active {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(145deg, #d9c9b0, #c6b294);
+  background:
+    radial-gradient(circle, rgba(112, 83, 44, 0.1) 0 0.6px, transparent 0.9px) 0 0 / 5px 5px,
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.13) 0 1px, rgba(117, 87, 49, 0.045) 1px 2px, transparent 2px 5px),
+    repeating-linear-gradient(90deg, transparent 0 46px, rgba(117, 87, 49, 0.055) 46px 47px, rgba(255, 255, 255, 0.1) 47px 48px),
+    linear-gradient(145deg, #e5d6bd, #ccb895);
 }
 
 .envelope__letter {
@@ -337,7 +341,11 @@ body.is-intro-active {
   position: absolute;
   inset: 0;
   z-index: 6;
-  background: linear-gradient(155deg, #e8dccb, #c6b091);
+  background:
+    radial-gradient(circle, rgba(112, 83, 44, 0.1) 0 0.6px, transparent 0.9px) 0 0 / 5px 5px,
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.14) 0 1px, rgba(117, 87, 49, 0.05) 1px 2px, transparent 2px 5px),
+    repeating-linear-gradient(90deg, transparent 0 46px, rgba(117, 87, 49, 0.055) 46px 47px, rgba(255, 255, 255, 0.11) 47px 48px),
+    linear-gradient(155deg, #f0e5d2, #cdb591);
   clip-path: polygon(0 0, 100% 0, 50% 58%);
   transform: rotateX(0deg);
   transform-origin: top center;
@@ -352,17 +360,29 @@ body.is-intro-active {
 }
 
 .envelope__front--left {
-  background: linear-gradient(60deg, #d8c6aa, #e6d8c4);
+  background:
+    radial-gradient(circle, rgba(112, 83, 44, 0.09) 0 0.6px, transparent 0.9px) 0 0 / 5px 5px,
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.12) 0 1px, rgba(117, 87, 49, 0.045) 1px 2px, transparent 2px 5px),
+    repeating-linear-gradient(90deg, transparent 0 46px, rgba(117, 87, 49, 0.05) 46px 47px, rgba(255, 255, 255, 0.1) 47px 48px),
+    linear-gradient(60deg, #ddcbae, #ebdeca);
   clip-path: polygon(0 0, 55% 52%, 0 100%);
 }
 
 .envelope__front--right {
-  background: linear-gradient(-60deg, #d5c2a5, #eadcc8);
+  background:
+    radial-gradient(circle, rgba(112, 83, 44, 0.09) 0 0.6px, transparent 0.9px) 0 0 / 5px 5px,
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.12) 0 1px, rgba(117, 87, 49, 0.045) 1px 2px, transparent 2px 5px),
+    repeating-linear-gradient(90deg, transparent 0 46px, rgba(117, 87, 49, 0.05) 46px 47px, rgba(255, 255, 255, 0.1) 47px 48px),
+    linear-gradient(-60deg, #dcc8aa, #ede0cc);
   clip-path: polygon(100% 0, 45% 52%, 100% 100%);
 }
 
 .envelope__front--bottom {
-  background: linear-gradient(0deg, #ddcdb6, #eadfce);
+  background:
+    radial-gradient(circle, rgba(112, 83, 44, 0.09) 0 0.6px, transparent 0.9px) 0 0 / 5px 5px,
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.12) 0 1px, rgba(117, 87, 49, 0.045) 1px 2px, transparent 2px 5px),
+    repeating-linear-gradient(90deg, transparent 0 46px, rgba(117, 87, 49, 0.05) 46px 47px, rgba(255, 255, 255, 0.1) 47px 48px),
+    linear-gradient(0deg, #e1cfb4, #eee3d1);
   clip-path: polygon(0 100%, 50% 45%, 100% 100%);
 }
 
@@ -748,6 +768,8 @@ a {
 }
 
 .place__card {
+  position: relative;
+  z-index: 2;
   width: min(520px, calc(100% - 70px));
   margin-left: -70px;
   padding: clamp(50px, 7vw, 90px);
@@ -767,6 +789,49 @@ a {
 
 .place__card .place__time {
   font-weight: 600;
+}
+
+.place--ceremony .place__card {
+  justify-self: end;
+  margin-right: -70px;
+  margin-left: 0;
+}
+
+.place__location {
+  display: block;
+  margin-top: 0.28em;
+  font-family: var(--serif);
+  font-size: 0.38em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.place__photo--church {
+  display: grid;
+  position: relative;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 44%, rgba(255, 255, 255, 0.85), transparent 42%),
+    repeating-linear-gradient(0deg, rgba(93, 120, 72, 0.025) 0 1px, transparent 1px 5px),
+    var(--ivory);
+}
+
+.place__photo--church::before {
+  position: absolute;
+  inset: 34px;
+  border: 1px solid rgba(93, 120, 72, 0.28);
+  content: "";
+}
+
+.place__placeholder-label {
+  position: relative;
+  color: rgba(93, 120, 72, 0.68);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .button {
@@ -1036,6 +1101,15 @@ a {
     margin: -110px auto 0;
   }
 
+  .place--ceremony .place__photo {
+    order: 1;
+  }
+
+  .place--ceremony .place__card {
+    order: 2;
+    margin: -110px auto 0;
+  }
+
   .details__grid {
     grid-template-columns: 1fr;
   }
@@ -1143,6 +1217,14 @@ a {
     width: calc(100% - 32px);
     margin-top: -80px;
     padding: 48px 24px;
+  }
+
+  .place--ceremony .place__card {
+    margin-top: -80px;
+  }
+
+  .place__photo--church::before {
+    inset: 18px;
   }
 
   .timeline__item:not(:last-child)::before,
