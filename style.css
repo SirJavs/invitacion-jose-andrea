@@ -545,21 +545,8 @@ a {
   z-index: 3;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding-top: 36px;
-}
-
-.nav__monogram {
-  font-family: var(--display);
-  font-size: 1.25rem;
-  letter-spacing: 0.08em;
-}
-
-.nav__monogram span {
-  margin: 0 3px;
-  color: #5d7848;
-  font-family: var(--script);
-  font-size: 1.75em;
 }
 
 .nav__links {
