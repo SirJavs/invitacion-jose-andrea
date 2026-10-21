@@ -808,7 +808,9 @@ a {
 }
 
 .place__photo--church {
+  padding-block: 32px;
   background: var(--ivory) url("iglesia-santa-maria-mar-acuarela-vegetacion.jpg") center / contain no-repeat;
+  background-origin: content-box;
 }
 
 .button {
@@ -1198,6 +1200,10 @@ a {
 
   .place--ceremony .place__card {
     margin-top: -80px;
+  }
+
+  .place__photo--church {
+    padding-block: 24px;
   }
 
   .timeline__item:not(:last-child)::before,
