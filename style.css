@@ -286,30 +286,48 @@ body.is-intro-active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(93, 120, 72, 0.18);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  color: #fff;
   background:
-    linear-gradient(rgba(255, 253, 248, 0.9), rgba(255, 253, 248, 0.9)),
-    repeating-linear-gradient(45deg, transparent 0 8px, rgba(93, 120, 72, 0.04) 8px 9px);
-  box-shadow: 0 8px 24px rgba(93, 120, 72, 0.12);
+    linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.34)),
+    url("vinuela-panorama-acuarela.jpg") center / cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
   transform: translateX(-50%) translateY(0);
 }
 
+.envelope__letter-eyebrow {
+  margin-bottom: 12px;
+  font-family: var(--serif);
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
 .envelope__initials {
-  font-family: var(--display);
-  font-size: clamp(2rem, 7vw, 3.2rem);
-  letter-spacing: 0.06em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--script);
+  font-size: clamp(2.2rem, 6vw, 4.5rem);
+  font-weight: 400;
+  line-height: 0.72;
 }
 
 .envelope__initials i {
   color: inherit;
-  font-family: var(--script);
-  font-size: 1.25em;
+  margin: 0.18em 0;
+  font-family: var(--serif);
+  font-size: 0.28em;
   font-style: normal;
+  line-height: 1;
 }
 
 .envelope__date {
-  margin-top: 10px;
-  color: var(--sage);
+  margin-top: 18px;
+  color: inherit;
   font-size: 0.62rem;
   font-weight: 600;
   letter-spacing: 0.2em;
