@@ -1,94 +1,169 @@
-şŠmş&yºŞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçXÛÛœİ[›ÈHØİ[Y[œ]Y\TÙ[XİÜŠˆÚ[›ÈŠNÂ˜ÛÛœİÜ[]ÛˆHØİ[Y[œ]Y\TÙ[XİÜŠˆÛÜ[‹Z[š]][ÛˆŠNÂ˜ÛÛœİ[š]][ÛˆHØİ[Y[œ]Y\TÙ[XİÜŠˆÚ[šXÚ[ÈŠNÂ˜ÛÛœİYÙPÛÛ[HØİ[Y[œ]Y\TÙ[XİÜ[
-˜›ÙHˆ››İ
-š[›ÊN››İ
-ØÜš\
-HŠNÂ˜ÛÛœİ™YXÙS[İ[ÛˆHÚ[™İË›X]ÚYYXJŠ™Y™\œË\™YXÙY[[İ[Ûˆ™YXÙJHŠK›X]Ú\ÎÂ˜ÛÛœİÛİ[İÛˆHØİ[Y[œ]Y\TÙ[XİÜŠ–Ù]KXÛİ[İÛ—HŠNÂ˜ÛÛœİ]\ÚXĞÛÛ›ÛÈHØİ[Y[œ]Y\TÙ[XİÜŠˆÛ]\ÚXËXÛÛ›ÛÈŠNÂ˜ÛÛœİ]\ÚXÕÙÙÛHHØİ[Y[œ]Y\TÙ[XİÜŠˆÛ]\ÚXË]ÙÙÛHŠNÂ˜ÛÛœİ]\ÚXÓ]]HHØİ[Y[œ]Y\TÙ[XİÜŠˆÛ]\ÚXË[]]HŠNÂ˜ÛÛœİ^TŞ[X›ÛHØİ[Y[œ]Y\TÙ[XİÜŠˆÛ]\ÚXË\^K\Ş[X›ÛŠNÂ˜ÛÛœİÛİ[™Ş[X›ÛHØİ[Y[œ]Y\TÙ[XİÜŠˆÛ]\ÚXË\Ûİ[™\Ş[X›ÛŠNÂ›]]\ÚXÔ^Y\Â›]]\ÚXÔ^Y\”™XYHH˜[ÙNÂ›]]\ÚXÔÚİ[^HH˜[ÙNÂ›]]\ÚXÒ\Ô^Z[™ÈH˜[ÙNÂ›]]\ÚXÒ\Ó]]YH˜[ÙNÂ›][š]][Û“Ü[™YH˜[ÙNÂ˜ÛÛœİ]\ÚXÕšY[ÒYH™ÛÒŞ“ÑYHÂ˜ÛÛœİ]\ÚXÔİ\ÙXÛÛ™ÈHNÂ˜ÛÛœİ]\ÚXÕ›Û[YHHÎÂ‚™[˜İ[Ûˆ\]S]\ÚXĞÛÛ›ÛÊ
-HÂˆ^TŞ[X›Û^ÛÛ[H]\ÚXÒ\Ô^Z[™ÈÈ¸¡hHˆˆ¸¥­ˆÂˆ]\ÚXÕÙÙÛKœÙ]]šX]J˜\šXK[X™[‹]\ÚXÒ\Ô^Z[™ÈÈ”]\Ø\ˆpîœÚXØHˆˆ”™\›ÙXÚ\ˆpîœÚXØHŠNÂˆÛİ[™Ş[X›Û^ÛÛ[H]\ÚXÒ\Ó]]YÈ°åÈˆˆ¸¦jˆÂˆ]\ÚXÓ]]KœÙ]]šX]J˜\šXK[X™[‹]\ÚXÒ\Ó]]YÈXİ]˜\ˆÛÛšYÈˆˆ”Ú[[˜ÚX\ˆpîœÚXØHŠNÂŸB‚™[˜İ[Ûˆİ\]\ÚXÔ^X˜XÚÊ
-HÂˆYˆ
-[]\ÚXÔ^Y\”™XYJH™]\›Â‚ˆ]\ÚXÔ^Y\‹[“]]J
-NÂˆ]\ÚXÔ^Y\‹œÙ]›Û[YJ]\ÚXÕ›Û[YJNÂˆ]\ÚXÒ\Ó]]YH˜[ÙNÂ‚ˆÛÛœİİ\œ™[[YHH]\ÚXÔ^Y\‹™Ù]İ\œ™[[YJ
-NÂˆYˆ
-S[X™\‹š\Ñš[š]Jİ\œ™[[YJHİ\œ™[[YH]\ÚXÔİ\ÙXÛÛ™ÊHÂˆ]\ÚXÔ^Y\‹œÙYZÕÊ]\ÚXÔİ\ÙXÛÛ™ËYJNÂˆB‚ˆ]\ÚXÔ^Y\‹œ^UšY[Ê
-NÂˆ\]S]\ÚXĞÛÛ›ÛÊ
-NÂŸB‚Ú[™İË›Û–[İUX™RYœ˜[YPTT™XYHH[˜İ[Ûˆ
+const intro = document.querySelector("#intro");
+const openButton = document.querySelector("#open-invitation");
+const invitation = document.querySelector("#inicio");
+const pageContent = document.querySelectorAll("body > :not(.intro):not(script)");
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const countdown = document.querySelector("[data-countdown]");
+const musicControls = document.querySelector("#music-controls");
+const musicToggle = document.querySelector("#music-toggle");
+const musicMute = document.querySelector("#music-mute");
+const playSymbol = document.querySelector("#music-play-symbol");
+const soundSymbol = document.querySelector("#music-sound-symbol");
+let musicPlayer;
+let musicPlayerReady = false;
+let musicShouldPlay = false;
+let musicIsPlaying = false;
+let musicIsMuted = false;
+let invitationOpened = false;
+const musicVideoId = "gn7HgzOEdHU";
+const musicStartSeconds = 41;
+const musicVolume = 3;
 
-HÂˆ]\ÚXÔ^Y\ˆH™]ÈU”^Y\Š[İ]X™K\^Y\ˆ‹ÂˆÚYˆŒŒ‹ˆZYÚˆŒŒ‹ˆšY[ÒYˆ]\ÚXÕšY[ÒYˆ^Y\•˜\œÎˆÂˆ]]Ü^NˆˆÛÛ›ÛÎˆˆ\ØX›ZØˆKˆİ\ˆ]\ÚXÔİ\ÙXÛÛ™Ëˆ^\Ú[›[™NˆKˆ™[ˆˆKˆ]™[ÎˆÂˆÛ”™XYNˆ
+function updateMusicControls() {
+  playSymbol.textContent = musicIsPlaying ? "â…¡" : "â–¶";
+  musicToggle.setAttribute("aria-label", musicIsPlaying ? "Pausar mÃºsica" : "Reproducir mÃºsica");
+  soundSymbol.textContent = musicIsMuted ? "Ã—" : "â™ª";
+  musicMute.setAttribute("aria-label", musicIsMuted ? "Activar sonido" : "Silenciar mÃºsica");
+}
 
-HOˆÂˆ]\ÚXÔ^Y\”™XYHHYNÂˆ]\ÚXÔ^Y\‹[“]]J
-NÂˆ]\ÚXÔ^Y\‹œÙ]›Û[YJ]\ÚXÕ›Û[YJNÂˆYˆ
-[š]][Û“Ü[™Y
-H]\ÚXĞÛÛ›ÛËšY[ˆH˜[ÙNÂˆYˆ
-]\ÚXÔÚİ[^JHİ\]\ÚXÔ^X˜XÚÊ
-NÂˆ\]S]\ÚXĞÛÛ›ÛÊ
-NÂˆKˆÛ”İ]PÚ[™ÙNˆ
-]™[
-HOˆÂˆYˆ
-]™[™]HOOHU”^Y\”İ]K‘S‘Q	‰ˆ]\ÚXÔÚİ[^JHÂˆ]\ÚXÔ^Y\‹œÙYZÕÊ]\ÚXÔİ\ÙXÛÛ™ËYJNÂˆ]\ÚXÔ^Y\‹œ^UšY[Ê
-NÂˆ™]\›ÂˆBˆ]\ÚXÒ\Ô^Z[™ÈH]™[™]HOOHU”^Y\”İ]K”VRS‘ÎÂˆ\]S]\ÚXĞÛÛ›ÛÊ
-NÂˆKˆÛ]]Ü^P›ØÚÙYˆ
+function startMusicPlayback() {
+  if (!musicPlayerReady) return;
 
-HOˆÂˆ]\ÚXÒ\Ô^Z[™ÈH˜[ÙNÂˆ\]S]\ÚXĞÛÛ›ÛÊ
-NÂˆKˆÛ‘\œ›Üˆ
+  musicPlayer.unMute();
+  musicPlayer.setVolume(musicVolume);
+  musicIsMuted = false;
 
-HOˆÂˆ]\ÚXÒ\Ô^Z[™ÈH˜[ÙNÂˆ\]S]\ÚXĞÛÛ›ÛÊ
-NÂˆKˆKˆJNÂŸNÂ‚˜ÛÛœİ[İ]X™P\HHØİ[Y[˜Ü™X]Q[[Y[
-œØÜš\ŠNÂ[İ]X™P\KœÜ˜ÈHšÎ‹ËİİİË[İ]X™K˜ÛÛKÚYœ˜[YWØ\HÂ[İ]X™P\K˜\Ş[˜ÈHYNÂ™Øİ[Y[šXY˜\[™Ú[
-[İ]X™P\JNÂ‚šYˆ
-Ú[™İË›ØØ][Û‹š\Ú
-HÂˆÚ[™İËš\İÜKœ™\XÙTİ]J[ˆ‹Ú[™İË›ØØ][Û‹œ]˜[YH
-ÈÚ[™İË›ØØ][Û‹œÙX\˜Ú
-NÂŸB‚Ú[™İËœØÜ›ÛÊ
-NÂœYÙPÛÛ[™›Ü‘XXÚ
+  const currentTime = musicPlayer.getCurrentTime();
+  if (!Number.isFinite(currentTime) || currentTime < musicStartSeconds) {
+    musicPlayer.seekTo(musicStartSeconds, true);
+  }
 
-[[Y[
-HOˆÈ[[Y[š[™\HYNÈJNÂ›Ü[]Û‹™›Øİ\ÊÈ™]™[ØÜ›ÛˆYHJNÂ‚™[˜İ[ÛˆÜ[’[š]][ÛŠ
-HÂˆYˆ
-[›Ë˜Û\ÜÓ\İ˜ÛÛZ[œÊš\Ë[Ü[š[™ÈŠJH™]\›Â‚ˆÜ[]Û‹™\ØX›YHYNÂˆ[›Ë˜Û\ÜÓ\İ˜Y
-š\Ë[Ü[š[™ÈŠNÂˆ]\ÚXÔÚİ[^HHYNÂˆİ\]\ÚXÔ^X˜XÚÊ
-NÂ‚ˆÚ[™İËœÙ][Y[İ]
+  musicPlayer.playVideo();
+  updateMusicControls();
+}
 
+window.onYouTubeIframeAPIReady = function () {
+  musicPlayer = new YT.Player("youtube-player", {
+    width: "200",
+    height: "200",
+    videoId: musicVideoId,
+    playerVars: {
+      autoplay: 0,
+      controls: 0,
+      disablekb: 1,
+      start: musicStartSeconds,
+      playsinline: 1,
+      rel: 0,
+    },
+    events: {
+      onReady: () => {
+        musicPlayerReady = true;
+        musicPlayer.unMute();
+        musicPlayer.setVolume(musicVolume);
+        if (invitationOpened) musicControls.hidden = false;
+        if (musicShouldPlay) startMusicPlayback();
+        updateMusicControls();
+      },
+      onStateChange: (event) => {
+        if (event.data === YT.PlayerState.ENDED && musicShouldPlay) {
+          musicPlayer.seekTo(musicStartSeconds, true);
+          musicPlayer.playVideo();
+          return;
+        }
+        musicIsPlaying = event.data === YT.PlayerState.PLAYING;
+        updateMusicControls();
+      },
+      onAutoplayBlocked: () => {
+        musicIsPlaying = false;
+        updateMusicControls();
+      },
+      onError: () => {
+        musicIsPlaying = false;
+        updateMusicControls();
+      },
+    },
+  });
+};
 
-HOˆÂˆ[›Ë˜Û\ÜÓ\İ˜Y
-š\ËYš[š\ÚYŠNÂˆ[›ËœÙ]]šX]J˜\šXKZY[ˆ‹YHŠNÂˆØİ[Y[˜›ÙK˜Û\ÜÓ\İœ™[[İ™Jš\ËZ[›ËXXİ]™HŠNÂˆYÙPÛÛ[™›Ü‘XXÚ
+const youtubeApi = document.createElement("script");
+youtubeApi.src = "https://www.youtube.com/iframe_api";
+youtubeApi.async = true;
+document.head.appendChild(youtubeApi);
 
-[[Y[
-HOˆÈ[[Y[š[™\H˜[ÙNÈJNÂˆ[š]][Û“Ü[™YHYNÂˆ]\ÚXĞÛÛ›ÛËšY[ˆH˜[ÙNÂˆÚ[™İËœØÜ›ÛÊ
-NÂˆ[š]][Û‹™›Øİ\ÊÈ™]™[ØÜ›ÛˆYHJNÂˆK™YXÙS[İ[ÛˆÈLŒˆNL
-NÂŸB‚›Ü[]Û‹˜Y]™[\İ[™\Š˜ÛXÚÈ‹Ü[’[š]][ÛŠNÂ‚›]\ÚXÕÙÙÛK˜Y]™[\İ[™\Š˜ÛXÚÈ‹
+if (window.location.hash) {
+  window.history.replaceState(null, "", window.location.pathname + window.location.search);
+}
 
-HOˆÂˆYˆ
-[]\ÚXÔ^Y\”™XYJH™]\›Â‚ˆYˆ
-]\ÚXÒ\Ô^Z[™ÊHÂˆ]\ÚXÔÚİ[^HH˜[ÙNÂˆ]\ÚXÔ^Y\‹œ]\ÙUšY[Ê
-NÂˆH[ÙHÂˆ]\ÚXÔÚİ[^HHYNÂˆİ\]\ÚXÔ^X˜XÚÊ
-NÂˆBŸJNÂ‚›]\ÚXÓ]]K˜Y]™[\İ[™\Š˜ÛXÚÈ‹
+window.scrollTo(0, 0);
+pageContent.forEach((element) => { element.inert = true; });
+openButton.focus({ preventScroll: true });
 
-HOˆÂˆYˆ
-[]\ÚXÔ^Y\”™XYJH™]\›Â‚ˆYˆ
-]\ÚXÒ\Ó]]Y
-HÂˆ]\ÚXÔ^Y\‹[“]]J
-NÂˆ]\ÚXÒ\Ó]]YH˜[ÙNÂˆH[ÙHÂˆ]\ÚXÔ^Y\‹›]]J
-NÂˆ]\ÚXÒ\Ó]]YHYNÂˆBˆ\]S]\ÚXĞÛÛ›ÛÊ
-NÂŸJNÂ‚™[˜İ[Ûˆ\]PÛİ[İÛŠ
-HÂˆÛÛœİÙY[™Ñ]HH™]È]JÛİ[İÛ‹™]\Ù]˜Ûİ[İÛŠK™Ù][YJ
-NÂˆÛÛœİ\İ[˜ÙHHX]›X^
-ÙY[™Ñ]HH]K››İÊ
-JNÂˆÛÛœİ˜[Y\ÈHÂˆ^\ÎˆX]™›ÛÜŠ\İ[˜ÙHÈ
-Kˆİ\œÎˆX]™›ÛÜŠ
-\İ[˜ÙH	H
-HÈÍŒ
-KˆZ[]\ÎˆX]™›ÛÜŠ
-\İ[˜ÙH	HÍŒ
-HÈŒ
-KˆÙXÛÛ™ÎˆX]™›ÛÜŠ
-\İ[˜ÙH	HŒ
-HÈL
-KˆNÂ‚ˆØš™Xİ™[šY\Ê˜[Y\ÊK™›Ü‘XXÚ
+function openInvitation() {
+  if (intro.classList.contains("is-opening")) return;
 
-İ[š]˜[YWJHOˆÂˆÛÛœİYÚ]ÈH[š]OOH™^\ÈˆÈÈˆÂˆÛİ[İÛ‹œ]Y\TÙ[XİÜŠÙ]K][š]H‰İ[š]H—X
-K^ÛÛ[Hİš[™Ê˜[YJKœYİ\
-YÚ]ËŒŠNÂˆJNÂŸB‚\]PÛİ[İÛŠ
-NÂÚ[™İËœÙ][\˜[
-\]PÛİ[İÛ‹L
-NÂ‚šYˆ
-™YXÙS[İ[ÛŠHÂˆ[›Ë˜Û\ÜÓ\İ˜Y
-œ™YXÙK[[İ[ÛˆŠNÂŸB
+  openButton.disabled = true;
+  intro.classList.add("is-opening");
+  musicShouldPlay = true;
+  startMusicPlayback();
+
+  window.setTimeout(() => {
+    intro.classList.add("is-finished");
+    intro.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("is-intro-active");
+    pageContent.forEach((element) => { element.inert = false; });
+    invitationOpened = true;
+    musicControls.hidden = false;
+    window.scrollTo(0, 0);
+    invitation.focus({ preventScroll: true });
+  }, reduceMotion ? 120 : 1900);
+}
+
+openButton.addEventListener("click", openInvitation);
+
+musicToggle.addEventListener("click", () => {
+  if (!musicPlayerReady) return;
+
+  if (musicIsPlaying) {
+    musicShouldPlay = false;
+    musicPlayer.pauseVideo();
+  } else {
+    musicShouldPlay = true;
+    startMusicPlayback();
+  }
+});
+
+musicMute.addEventListener("click", () => {
+  if (!musicPlayerReady) return;
+
+  if (musicIsMuted) {
+    musicPlayer.unMute();
+    musicIsMuted = false;
+  } else {
+    musicPlayer.mute();
+    musicIsMuted = true;
+  }
+  updateMusicControls();
+});
+
+function updateCountdown() {
+  const weddingDate = new Date(countdown.dataset.countdown).getTime();
+  const distance = Math.max(0, weddingDate - Date.now());
+  const values = {
+    days: Math.floor(distance / 86400000),
+    hours: Math.floor((distance % 86400000) / 3600000),
+    minutes: Math.floor((distance % 3600000) / 60000),
+    seconds: Math.floor((distance % 60000) / 1000),
+  };
+
+  Object.entries(values).forEach(([unit, value]) => {
+    const digits = unit === "days" ? 3 : 2;
+    countdown.querySelector(`[data-unit="${unit}"]`).textContent = String(value).padStart(digits, "0");
+  });
+}
+
+updateCountdown();
+window.setInterval(updateCountdown, 1000);
+
+if (reduceMotion) {
+  intro.classList.add("reduce-motion");
+}
