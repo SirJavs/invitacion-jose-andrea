@@ -1,273 +1,2 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="InvitaciÃ³n de boda de Andrea y JosÃ©. Consulta todos los detalles de nuestro gran dÃ­a."
-    />
-    <title>Andrea y JosÃ© â€” Nuestra boda</title>
-    <link rel="stylesheet" href="style.css?v=20261025-engagement-ring" />
-  </head>
-
-  <body class="is-intro-active">
-    <div class="intro" id="intro" role="dialog" aria-modal="true" aria-labelledby="intro-title">
-      <div class="intro__ornament intro__ornament--left" aria-hidden="true">â§</div>
-      <div class="intro__ornament intro__ornament--right" aria-hidden="true">â§</div>
-
-      <div class="intro__scene">
-        <p class="intro__pretitle">Tenemos algo que contaros</p>
-
-        <button class="envelope" id="open-invitation" type="button" aria-label="Abrir la invitaciÃ³n">
-          <span class="envelope__shadow" aria-hidden="true"></span>
-          <span class="envelope__back" aria-hidden="true"></span>
-          <span class="envelope__letter" aria-hidden="true">
-            <span class="envelope__letter-eyebrow">Nos casamos</span>
-            <span class="envelope__initials">
-              <span>Andrea</span>
-              <i>y</i>
-              <span>JosÃ©</span>
-            </span>
-            <span class="envelope__date">03 Â· 04 Â· 2027</span>
-          </span>
-          <span class="envelope__flap" aria-hidden="true"></span>
-          <span class="envelope__front envelope__front--left" aria-hidden="true"></span>
-          <span class="envelope__front envelope__front--right" aria-hidden="true"></span>
-          <span class="envelope__front envelope__front--bottom" aria-hidden="true"></span>
-          <span class="envelope__seal" aria-hidden="true">
-              <img src="sello-andrea-jose.png?v=5d7848" alt="" />
-          </span>
-        </button>
-
-        <h1 class="intro__title" id="intro-title">Andrea <span>y</span> JosÃ©</h1>
-        <p class="intro__hint">Pulsa el sobre para abrir la invitaciÃ³n</p>
-      </div>
-    </div>
-
-    <div class="music-controls" id="music-controls" aria-label="Controles de mÃºsica" hidden>
-      <button class="music-button" id="music-toggle" type="button" aria-label="Reproducir mÃºsica">
-        <span class="music-button__symbol" id="music-play-symbol" aria-hidden="true">â–¶</span>
-      </button>
-      <button class="music-button music-button--sound" id="music-mute" type="button" aria-label="Silenciar mÃºsica">
-        <span id="music-sound-symbol" aria-hidden="true">â™ª</span>
-      </button>
-    </div>
-    <div class="youtube-player" id="youtube-player" aria-hidden="true"></div>
-
-    <header class="hero" id="inicio" tabindex="-1">
-      <nav class="nav container" aria-label="NavegaciÃ³n principal">
-        <div class="nav__links">
-          <a href="#historia">Nuestra historia</a>
-          <a href="#programa">El gran dÃ­a</a>
-          <a href="#confirmacion">Confirmar</a>
-        </div>
-      </nav>
-
-      <div class="hero__veil"></div>
-      <div class="hero__content container">
-        <p class="eyebrow eyebrow--light">Nos casamos</p>
-        <h1><span>Andrea</span><b>y</b><span>JosÃ©</span></h1>
-        <p class="hero__date">03 Â· 04 Â· 2027</p>
-        <a class="scroll-cue" href="#cuenta-atras" aria-label="Descubrir la invitaciÃ³n">
-          <span>Descubre la invitaciÃ³n</span>
-          <i aria-hidden="true">â†“</i>
-        </a>
-      </div>
-    </header>
-
-    <main>
-      <section class="countdown section" id="cuenta-atras">
-        <div class="container container--narrow">
-          <p class="eyebrow">Cada vez queda menos</p>
-          <h2 class="section-title">Cuenta atrÃ¡s</h2>
-          <div class="countdown__grid" data-countdown="2027-04-03T11:00:00" aria-label="Cuenta atrÃ¡s para la boda">
-            <div><strong data-unit="days">000</strong><span>DÃ­as</span></div>
-            <div><strong data-unit="hours">00</strong><span>Horas</span></div>
-            <div><strong data-unit="minutes">00</strong><span>Minutos</span></div>
-            <div><strong data-unit="seconds">00</strong><span>Segundos</span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="story section" id="historia">
-        <div class="container story__grid">
-          <div class="story__image image-frame">
-            <img
-              src="andrea-jose-acuarela.jpg"
-              alt="Retrato en acuarela de Andrea y JosÃ©"
-            />
-          </div>
-          <div class="story__content">
-            <span class="botanical" aria-hidden="true">â§</span>
-            <p class="eyebrow">Nuestra boda</p>
-            <h2 class="section-title section-title--left">Una historia que continÃºa</h2>
-            <p>
-              DespuÃ©s de tantos momentos compartidos, hemos decidido celebrar el comienzo de una nueva etapa.
-              Nos harÃ­a muchÃ­sima ilusiÃ³n que formaras parte de este dÃ­a tan especial.
-            </p>
-            <p class="signature">Con cariÃ±o,<span class="signature__names">Andrea y JosÃ©</span></p>
-          </div>
-        </div>
-      </section>
-
-      <section class="place place--ceremony section" id="ceremonia">
-        <div class="place__card">
-          <p class="eyebrow">La ceremonia</p>
-          <h2 class="section-title">
-            Iglesia Santa MarÃ­a del Mar
-            <span class="place__location">(Torremolinos)</span>
-          </h2>
-          <p class="place__time">SÃ¡bado, 03 de abril de 2027 Â· 11:00 h</p>
-          <p>Pasaje del Sanatorio, 6<br />29620 Torremolinos, MÃ¡laga</p>
-          <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Iglesia%20Santa%20Mar%C3%ADa%20del%20Mar%2C%20Pasaje%20del%20Sanatorio%206%2C%2029620%20Torremolinos%2C%20M%C3%A1laga" target="_blank" rel="noopener noreferrer">
-            Ver ubicaciÃ³n <span aria-hidden="true">â†—</span>
-          </a>
-        </div>
-        <div class="place__photo place__photo--church" role="img" aria-label="Iglesia Santa MarÃ­a del Mar ilustrada en acuarela"></div>
-      </section>
-
-      <section class="place section">
-        <div class="place__photo" role="img" aria-label="Templete de celebraciÃ³n decorado con flores, ilustrado en acuarela"></div>
-        <div class="place__card">
-          <p class="eyebrow">La celebraciÃ³n</p>
-          <h2 class="section-title">B Bou La ViÃ±uela Boutique Hotel</h2>
-          <p class="place__time">SÃ¡bado, 03 de abril de 2027 Â· 14:00 h</p>
-          <p>B Bou Hotel La ViÃ±uela y Spa<br />Vereda de VÃ©lez, s/n Â· 29712 MÃ¡laga</p>
-          <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=B%20Bou%20Hotel%20La%20Vi%C3%B1uela%20%26%20Spa%2C%20Vereda%20de%20V%C3%A9lez%2C%20SN%2C%2029712%2C%20M%C3%A1laga" target="_blank" rel="noopener noreferrer">
-            Ver ubicaciÃ³n <span aria-hidden="true">â†—</span>
-          </a>
-        </div>
-      </section>
-
-      <section class="schedule section" id="programa">
-        <div class="container container--narrow">
-          <p class="eyebrow">Todo lo que hemos preparado</p>
-          <h2 class="section-title">Plan del dÃ­a</h2>
-
-          <div class="timeline">
-            <article class="timeline__item">
-              <div class="timeline__icon" aria-hidden="true">
-                <svg class="timeline__ring" viewBox="0 0 40 40" focusable="false">
-                  <circle cx="20" cy="26" r="11" />
-                  <circle cx="20" cy="26" r="8" />
-                  <path d="M14 10l3-4h6l3 4l-6 5l-6-5ZM14 10h12M17 6l3 4l3-4M20 10v5" />
-                </svg>
-              </div>
-              <time datetime="2027-04-03T11:00">11:00 h</time>
-              <h3>Ceremonia</h3>
-              <p>AquÃ­ llega el "SÃ­, quiero!"</p>
-            </article>
-            <article class="timeline__item">
-              <div class="timeline__icon" aria-hidden="true">
-                <svg class="timeline__road" viewBox="0 0 40 32" focusable="false">
-                  <path d="M8 31C3 26 4 21 12 18C23 14 27 13 23 9C20 6 15 5 18 1" />
-                  <path d="M32 31C24 26 16 22 20 19C25 15 35 14 31 9C28 5 23 4 26 1" />
-                  <path class="timeline__road-centre" d="M20 31C14 26 10 22 16 19C22 16 31 14 27 9C24 6 19 5 22 1" />
-                </svg>
-              </div>
-              <time datetime="2027-04-03T12:30">12:30 h</time>
-              <h3>AutobÃºs</h3>
-              <p>Salida del autobÃºs.</p>
-            </article>
-            <article class="timeline__item">
-              <div class="timeline__icon" aria-hidden="true">
-                <svg class="timeline__cocktail" viewBox="0 0 40 40" focusable="false">
-                  <circle cx="31" cy="9" r="6" />
-                  <path d="M31 3v12M25.8 6l10.4 6M25.8 12L36.2 6" />
-                  <path d="M4 11c5-2 22-2 28 0c-2 2-7 3-14 3S6 13 4 11Z" />
-                  <path d="M5 12c3 6 7 10 13 11c6-1 10-5 13-11M18 23v10M12 36c3-2 9-2 12 0" />
-                </svg>
-              </div>
-              <time datetime="2027-04-03T14:00">14:00 h</time>
-              <h3>CÃ³ctel</h3>
-              <p>Brindis, abrazos y reencuentros.</p>
-            </article>
-            <article class="timeline__item">
-              <div class="timeline__icon" aria-hidden="true">
-                <svg class="timeline__cutlery" viewBox="0 0 40 40" focusable="false">
-                  <path d="M6 3v9M10 3v9M14 3v9M6 12c0 3 1.5 5 4 5s4-2 4-5M10 17v20" />
-                  <path d="M22 3c-3 5-4 11-4 17l4 3M22 3v34" />
-                  <path d="M31 17c3 0 5-3 5-7s-2-7-5-7s-5 3-5 7s2 7 5 7Zm0 0v20" />
-                </svg>
-              </div>
-              <time datetime="2027-04-03T15:30">15:30 h</time>
-              <h3>Comida</h3>
-              <p>Una mesa para celebrar juntos.</p>
-            </article>
-            <article class="timeline__item">
-              <div class="timeline__icon" aria-hidden="true">
-                <svg class="timeline__disco" viewBox="0 0 40 40" focusable="false">
-                  <path d="M20 1v7M16 10c1-2 2-3 4-3s3 1 4 3" />
-                  <circle cx="20" cy="23" r="13" />
-                  <path d="M20 10c-7 5-7 21 0 26M20 10c7 5 7 21 0 26M20 10v26" />
-                  <path d="M9 16c6 4 16 4 22 0M7 22c7 3 19 3 26 0M8 28c7 3 17 3 24 0M11 33c5 2 13 2 18 0" />
-                  <path d="M34 4c0 3-1 4-4 4c3 0 4 1 4 4c0-3 1-4 4-4c-3 0-4-1-4-4ZM5 11c0 2-1 3-3 3c2 0 3 1 3 3c0-2 1-3 3-3c-2 0-3-1-3-3Z" />
-                  <circle class="timeline__disco-dot" cx="35" cy="17" r="1" />
-                </svg>
-              </div>
-              <time datetime="2027-04-03T18:00">18:00 h</time>
-              <h3>Fiesta</h3>
-              <p>Ahora sÃ­: Â¡a darlo todo!</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="details section">
-        <div class="container">
-          <div class="details__heading">
-            <p class="eyebrow">InformaciÃ³n prÃ¡ctica</p>
-            <h2 class="section-title">Para disfrutar sin preocupaciones</h2>
-          </div>
-
-          <div class="details__grid">
-            <article class="detail-card">
-              <span class="detail-card__number">01</span>
-              <h3>AutobÃºs</h3>
-              <p>
-                <strong>Salida: 12:30 h</strong><br />
-                Calle Victoria de los Ãngeles<br />
-                29140 Churriana, MÃ¡laga<br /><br />
-                <strong>Vuelta:</strong> Por determinar
-              </p>
-              <a href="https://maps.app.goo.gl/RuV6XebsvwjqDNzZ7" target="_blank" rel="noopener noreferrer">
-                Ver salida
-              </a>
-            </article>
-            <article class="detail-card detail-card--accent">
-              <span class="detail-card__number">02</span>
-              <h3>Alojamiento</h3>
-              <p>
-                En caso de tener miedo a marearte durante la vuelta en el autobÃºs, aquÃ­ podrÃ¡s encontrar un sitio
-                donde descansar una vez acabe la fiesta.
-              </p>
-              <a href="https://www.booking.com/searchresults.es.html?ss=B+bou+Hotel+La+Vi%C3%B1uela+%26+Spa&amp;efdco=1&amp;label=msn-*_ccyXU4_*XBiFj*3M*qow-79989658705812%3Atikwd-79989834232084%3Aloc-170%3Aneo%3Amte%3Alp292225%3Adec%3Acid518941053%3Aagid1279832834469714%3Aclkid622a969085d51cc3fa12fc4d310380eb&amp;aid=2369661&amp;lang=es&amp;sb=1&amp;src_elem=sb&amp;src=index&amp;dest_id=ChIJC4x1T-1Bcg0RtptCklcmnUY&amp;dest_type=latlong&amp;latitude=36.8752813&amp;longitude=-4.158817&amp;ac_meta=IAEoAjICZXNaCnJlc3RhdXJhbnQ%3D&amp;ac_position=1&amp;ac_click_type=g&amp;ac_langcode=es&amp;ac_suggestion_list_length=2&amp;search_selected=true&amp;search_pageview_id=ed2761dbaa0fcd0b36480af694c0bb77&amp;checkin=2027-04-03&amp;checkout=2027-04-04&amp;group_adults=2&amp;no_rooms=1&amp;group_children=0" target="_blank" rel="noopener noreferrer">
-                Ver alojamiento
-              </a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="rsvp section" id="confirmacion">
-        <div class="container container--narrow rsvp__content">
-          <span class="botanical botanical--light" aria-hidden="true">â¦</span>
-          <p class="eyebrow eyebrow--light">Antes del 30 de noviembre:</p>
-          <h2>Â¿Nos acompaÃ±as?</h2>
-          <p>RespÃ³ndenos a este breve formulario que no te llevarÃ¡ mÃ¡s de 2 minutos.</p>
-          <a class="button button--light" href="https://docs.google.com/forms/d/1-PY6YI68wcis-k_d5e-NSsUyQQH5Sc6F--WtTG83M0k/viewform?ts=6a6f85d9&amp;edit_requested=true" target="_blank" rel="noopener noreferrer">
-            Confirmar asistencia
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <a class="footer__names" href="#inicio">Andrea <span>y</span> JosÃ©</a>
-      <p>03 de abril de 2027 Â· MÃ¡laga</p>
-    </footer>
-
-    <script src="script.js?v=20261025-song-41s"></script>
-  </body>
-</html>
+þŠmþ&yºÞÃòân¶«Ëñè™æë{Ü™ßì…éez{ì†X§{_?n)ÿ¦Ã©z¶­Š‰ç¢Ú^®h­µçOQÐÕTH[‚[[™ÏH™\È‚ˆXY‚ˆY]HÚ\œÙ]H•U‹NˆÏ‚ˆY]H˜[YOHšY]ÜÜˆÛÛ[HÚYY]šXÙK]ÚY[š]X[\ØØ[OLKŒˆÏ‚ˆY]Bˆ˜[YOH™\ØÜš\[Ûˆ‚ˆÛÛ[H’[š]XÚpìÛˆH›ÙHH[™™XHH›ÜðêKˆÛÛœÝ[HÙÜÈÜÈ][\ÈHY\Ý›ÈÜ˜[ˆ0ëXKˆ‚ˆÏ‚ˆ]O[™™XHH›ÜðêH8 %Y\Ý˜H›ÙOÝ]O‚ˆ[šÈ™[HœÝ[\ÚY]ˆ™YHœÝ[K˜ÜÜÏÝLŒŒLKY[™ØYÙ[Y[\š[™ÈˆÏ‚ˆÚXY‚‚ˆ›ÙHÛ\ÜÏHš\ËZ[›ËXXÝ]™H‚ˆ]ˆÛ\ÜÏHš[›ÈˆYHš[›Èˆ›ÛOH™X[ÙÈˆ\šXK[[Ù[HYHˆ\šXK[X™[YžOHš[›Ë]]H‚ˆ]ˆÛ\ÜÏHš[›××ÛÜ›˜[Y[[›××ÛÜ›˜[Y[K[Yˆ\šXKZY[HYH¸§iÏÙ]‚ˆ]ˆÛ\ÜÏHš[›××ÛÜ›˜[Y[[›××ÛÜ›˜[Y[K\šYÚˆ\šXKZY[HYH¸§iÏÙ]‚‚ˆ]ˆÛ\ÜÏHš[›××ÜØÙ[™H‚ˆÛ\ÜÏHš[›××Ü™]]H•[™[[ÜÈ[ÛÈ]YHÛÛ\›ÜÏÜ‚‚ˆ]ÛˆÛ\ÜÏH™[™[ÜHˆYH›Ü[‹Z[š]][Ûˆˆ\OH˜]Ûˆˆ\šXK[X™[HXœš\ˆH[š]XÚpìÛˆ‚ˆÜ[ˆÛ\ÜÏH™[™[ÜW×ÜÚYÝÈˆ\šXKZY[HYHÜÜ[‚ˆÜ[ˆÛ\ÜÏH™[™[ÜW×Ø˜XÚÈˆ\šXKZY[HYHÜÜ[‚ˆÜ[ˆÛ\ÜÏH™[™[ÜW×Û]\ˆˆ\šXKZY[HYH‚ˆÜ[ˆÛ\ÜÏH™[™[ÜW×Û]\‹Y^YXœ›ÝÈ“›ÜÈØ\Ø[[ÜÏÜÜ[‚ˆÜ[ˆÛ\ÜÏH™[™[ÜW×Ú[š]X[È‚ˆÜ[[™™XOÜÜ[‚ˆOžOÚO‚ˆÜ[’›ÜðêOÜÜ[‚ˆÜÜ[‚ˆÜ[ˆÛ\ÜÏH™[™[ÜW×Ù]HŒÈ0­È0­ÈŒÏÜÜ[‚ˆÜÜ[‚ˆÜ[ˆÛ\ÜÏH™[™[ÜW×Ù›\ˆ\šXKZY[HYHÜÜ[‚ˆÜ[ˆÛ\ÜÏH™[™[ÜW×Ùœ›Û[™[ÜW×Ùœ›ÛK[Yˆ\šXKZY[HYHÜÜ[‚ˆÜ[ˆÛ\ÜÏH™[™[ÜW×Ùœ›Û[™[ÜW×Ùœ›ÛK\šYÚˆ\šXKZY[HYHÜÜ[‚ˆÜ[ˆÛ\ÜÏH™[™[ÜW×Ùœ›Û[™[ÜW×Ùœ›ÛKX›ÝÛHˆ\šXKZY[HYHÜÜ[‚ˆÜ[ˆÛ\ÜÏH™[™[ÜW×ÜÙX[ˆ\šXKZY[HYH‚ˆ[YÈÜ˜ÏHœÙ[ËX[™™XKZ›ÜÙKœ™ÏÝMYÎˆ[HˆˆÏ‚ˆÜÜ[‚ˆØ]Û‚‚ˆHÛ\ÜÏHš[›××Ý]HˆYHš[›Ë]]H[™™XHÜ[žOÜÜ[ˆ›ÜðêOÚO‚ˆÛ\ÜÏHš[›××Ú[”[ØH[ÛØœ™H\˜HXœš\ˆH[š]XÚpìÛÜ‚ˆÙ]‚ˆÙ]‚‚ˆ]ˆÛ\ÜÏH›]\ÚXËXÛÛ›ÛÈˆYH›]\ÚXËXÛÛ›ÛÈˆ\šXK[X™[HÛÛ›Û\ÈHpîœÚXØHˆY[‚ˆ]ÛˆÛ\ÜÏH›]\ÚXËX]ÛˆˆYH›]\ÚXË]ÙÙÛHˆ\OH˜]Ûˆˆ\šXK[X™[H”™\›ÙXÚ\ˆpîœÚXØH‚ˆÜ[ˆÛ\ÜÏH›]\ÚXËX]Û—×ÜÞ[X›ÛˆYH›]\ÚXË\^K\Þ[X›Ûˆ\šXKZY[HYH¸¥­ÜÜ[‚ˆØ]Û‚ˆ]ÛˆÛ\ÜÏH›]\ÚXËX]Ûˆ]\ÚXËX]Û‹K\ÛÝ[™ˆYH›]\ÚXË[]]Hˆ\OH˜]Ûˆˆ\šXK[X™[H”Ú[[˜ÚX\ˆpîœÚXØH‚ˆÜ[ˆYH›]\ÚXË\ÛÝ[™\Þ[X›Ûˆ\šXKZY[HYH¸¦jÜÜ[‚ˆØ]Û‚ˆÙ]‚ˆ]ˆÛ\ÜÏHž[Ý]X™K\^Y\ˆˆYHž[Ý]X™K\^Y\ˆˆ\šXKZY[HYHÙ]‚‚ˆXY\ˆÛ\ÜÏHš\›ÈˆYHš[šXÚ[ÈˆXš[™^H‹LH‚ˆ˜]ˆÛ\ÜÏH›˜]ˆÛÛZ[™\ˆˆ\šXK[X™[H“˜]™YØXÚpìÛˆš[˜Ú\[‚ˆ]ˆÛ\ÜÏH›˜]—×Û[šÜÈ‚ˆH™YHˆÚ\ÝÜšXH“Y\Ý˜H\ÝÜšXOØO‚ˆH™YHˆÜ›ÙÜ˜[XH‘[Ü˜[ˆ0ëXOØO‚ˆH™YHˆØÛÛ™š\›XXÚ[ÛˆÛÛ™š\›X\ØO‚ˆÙ]‚ˆÛ˜]‚‚ˆ]ˆÛ\ÜÏHš\›××Ý™Z[Ù]‚ˆ]ˆÛ\ÜÏHš\›××ØÛÛ[ÛÛZ[™\ˆ‚ˆÛ\ÜÏH™^YXœ›ÝÈ^YXœ›ÝËK[YÚ“›ÜÈØ\Ø[[ÜÏÜ‚ˆOÜ[[™™XOÜÜ[žOØÜ[’›ÜðêOÜÜ[ÚO‚ˆÛ\ÜÏHš\›××Ù]HŒÈ0­È0­ÈŒÏÜ‚ˆHÛ\ÜÏHœØÜ›ÛXÝYHˆ™YHˆØÝY[KX]˜\Èˆ\šXK[X™[H‘\ØÝXœš\ˆH[š]XÚpìÛˆ‚ˆÜ[‘\ØÝXœ™HH[š]XÚpìÛÜÜ[‚ˆH\šXKZY[HYH¸¡¤ÏÚO‚ˆØO‚ˆÙ]‚ˆÚXY\‚‚ˆXZ[‚ˆÙXÝ[ÛˆÛ\ÜÏH˜ÛÝ[ÝÛˆÙXÝ[ÛˆˆYH˜ÝY[KX]˜\È‚ˆ]ˆÛ\ÜÏH˜ÛÛZ[™\ˆÛÛZ[™\‹K[˜\œ›ÝÈ‚ˆÛ\ÜÏH™^YXœ›ÝÈØYH™^ˆ]YYHY[›ÜÏÜ‚ˆˆÛ\ÜÏHœÙXÝ[Û‹]]HÝY[H]°è\ÏÚ‚ˆ]ˆÛ\ÜÏH˜ÛÝ[ÝÛ—×ÙÜšYˆ]KXÛÝ[ÝÛHŒŒËLLÕLNŒŒˆ\šXK[X™[HÝY[H]°è\È\˜HH›ÙH‚ˆ]Ý›Û™È]K][š]H™^\ÈŒÜÝ›Û™ÏÜ[‘0ëX\ÏÜÜ[Ù]‚ˆ]Ý›Û™È]K][š]HšÝ\œÈŒÜÝ›Û™ÏÜ[’Ü˜\ÏÜÜ[Ù]‚ˆ]Ý›Û™È]K][š]H›Z[]\ÈŒÜÝ›Û™ÏÜ[“Z[]ÜÏÜÜ[Ù]‚ˆ]Ý›Û™È]K][š]HœÙXÛÛ™ÈŒÜÝ›Û™ÏÜ[”ÙYÝ[™ÜÏÜÜ[Ù]‚ˆÙ]‚ˆÙ]‚ˆÜÙXÝ[Û‚‚ˆÙXÝ[ÛˆÛ\ÜÏHœÝÜžHÙXÝ[ÛˆˆYHš\ÝÜšXH‚ˆ]ˆÛ\ÜÏH˜ÛÛZ[™\ˆÝÜžW×ÙÜšY‚ˆ]ˆÛ\ÜÏHœÝÜžW×Ú[XYÙH[XYÙKYœ˜[YH‚ˆ[YÂˆÜ˜ÏH˜[™™XKZ›ÜÙKXXÝX\™[KšœÈ‚ˆ[H”™]˜]È[ˆXÝX\™[HH[™™XHH›ÜðêH‚ˆÏ‚ˆÙ]‚ˆ]ˆÛ\ÜÏHœÝÜžW×ØÛÛ[‚ˆÜ[ˆÛ\ÜÏH˜›Ý[šXØ[ˆ\šXKZY[HYH¸§iÏÜÜ[‚ˆÛ\ÜÏH™^YXœ›ÝÈ“Y\Ý˜H›ÙOÜ‚ˆˆÛ\ÜÏHœÙXÝ[Û‹]]HÙXÝ[Û‹]]KK[Y•[˜H\ÝÜšXH]YHÛÛ[°î˜OÚ‚ˆ‚ˆ\Üpê\ÈH[ÜÈ[ÛY[ÜÈÛÛ\\YÜË[[ÜÈXÚYYÈÙ[Xœ˜\ˆ[ÛÛZY[ž›ÈH[˜HY]˜H]\K‚ˆ›ÜÈ\°ëXH]XÚ0ë\Ú[XH[\ÚpìÛˆ]YH›Ü›X\˜\È\HH\ÝH0ëXH[ˆ\ÜXÚX[‚ˆÜ‚ˆÛ\ÜÏHœÚYÛ˜]\™HÛÛˆØ\špì[ËÜ[ˆÛ\ÜÏHœÚYÛ˜]\™W×Û˜[Y\È[™™XHH›ÜðêOÜÜ[Ü‚ˆÙ]‚ˆÙ]‚ˆÜÙXÝ[Û‚‚ˆÙXÝ[ÛˆÛ\ÜÏHœXÙHXÙKKXÙ\™[[ÛžHÙXÝ[ÛˆˆYH˜Ù\™[[ÛšXH‚ˆ]ˆÛ\ÜÏHœXÙW×ØØ\™‚ˆÛ\ÜÏH™^YXœ›ÝÈ“HÙ\™[[ÛšXOÜ‚ˆˆÛ\ÜÏHœÙXÝ[Û‹]]H‚ˆYÛ\ÚXHØ[HX\°ëXH[X\‚ˆÜ[ˆÛ\ÜÏHœXÙW×ÛØØ][ÛˆŠÜœ™[[Û[›ÜÊOÜÜ[‚ˆÚ‚ˆÛ\ÜÏHœXÙW×Ý[YH”ðèX˜YËÈHXœš[HŒÈ0­ÈLNŒÜ‚ˆ”\ØZ™H[Ø[˜]Üš[ËœˆÏŒŽMŒŒÜœ™[[Û[›ÜËpè[YØOÜ‚ˆHÛ\ÜÏH˜]Ûˆˆ™YHšÎ‹ËÝÝÝË™ÛÛÙÛK˜ÛÛKÛX\ËÜÙX\˜ÚÏØ\OLI˜[\Ü]Y\žORYÛ\ÚXILŒØ[ILŒX\‰PÌÉPQILŒ[	LŒX\‰LÉLŒ\ØZ™ILŒ[	LŒØ[˜]Üš[ÉLŒ‰LÉLŒŽMŒŒ	LŒÜœ™[[Û[›ÜÉLÉLŒIPÌÉPL[YØHˆ\™Ù]H—Ø›[šÈˆ™[H››ÛÜ[™\ˆ›Ü™Y™\œ™\ˆ‚ˆ™\ˆXšXØXÚpìÛˆÜ[ˆ\šXKZY[HYH¸¡¥ÏÜÜ[‚ˆØO‚ˆÙ]‚ˆ]ˆÛ\ÜÏHœXÙW×ÜÝÈXÙW×ÜÝËKXÚ\˜Úˆ›ÛOHš[YÈˆ\šXK[X™[H’YÛ\ÚXHØ[HX\°ëXH[X\ˆ[\Ý˜YH[ˆXÝX\™[HÙ]‚ˆÜÙXÝ[Û‚‚ˆÙXÝ[ÛˆÛ\ÜÏHœXÙHÙXÝ[Ûˆ‚ˆ]ˆÛ\ÜÏHœXÙW×ÜÝÈˆ›ÛOHš[YÈˆ\šXK[X™[H•[\]HHÙ[Xœ˜XÚpìÛˆXÛÜ˜YÈÛÛˆ›Ü™\Ë[\Ý˜YÈ[ˆXÝX\™[HÙ]‚ˆ]ˆÛ\ÜÏHœXÙW×ØØ\™‚ˆÛ\ÜÏH™^YXœ›ÝÈ“HÙ[Xœ˜XÚpìÛÜ‚ˆˆÛ\ÜÏHœÙXÝ[Û‹]]Hˆ›ÝHHšpì]Y[H›Ý]\]YHÝ[Ú‚ˆÛ\ÜÏHœXÙW×Ý[YH”ðèX˜YËÈHXœš[HŒÈ0­ÈMŒÜ‚ˆˆ›ÝHÝ[Hšpì]Y[HHÜOœˆÏ•™\™YHH°ê[^‹ËÛˆ0­ÈŽMÌLˆpè[YØOÜ‚ˆHÛ\ÜÏH˜]Ûˆˆ™YHšÎ‹ËÝÝÝË™ÛÛÙÛK˜ÛÛKÛX\ËÜÙX\˜ÚÏØ\OLI˜[\Ü]Y\žOP‰LŒ›ÝILŒÝ[	LŒILŒšIPÌÉPŒ]Y[ILŒ	L‰LŒÜILÉLŒ™\™YILŒILŒ‰PÌÉPN[^‰LÉLŒÓ‰LÉLŒŽMÌL‰LÉLŒIPÌÉPL[YØHˆ\™Ù]H—Ø›[šÈˆ™[H››ÛÜ[™\ˆ›Ü™Y™\œ™\ˆ‚ˆ™\ˆXšXØXÚpìÛˆÜ[ˆ\šXKZY[HYH¸¡¥ÏÜÜ[‚ˆØO‚ˆÙ]‚ˆÜÙXÝ[Û‚‚ˆÙXÝ[ÛˆÛ\ÜÏHœØÚY[HÙXÝ[ÛˆˆYHœ›ÙÜ˜[XH‚ˆ]ˆÛ\ÜÏH˜ÛÛZ[™\ˆÛÛZ[™\‹K[˜\œ›ÝÈ‚ˆÛ\ÜÏH™^YXœ›ÝÈ•ÙÈÈ]YH[[ÜÈ™\\˜YÏÜ‚ˆˆÛ\ÜÏHœÙXÝ[Û‹]]H”[ˆ[0ëXOÚ‚‚ˆ]ˆÛ\ÜÏH[Y[[™H‚ˆ\XÛHÛ\ÜÏH[Y[[™W×Ú][H‚ˆ]ˆÛ\ÜÏH[Y[[™W×ÚXÛÛˆˆ\šXKZY[HYH‚ˆÝ™ÈÛ\ÜÏH[Y[[™W×Üš[™ÈˆšY]Ð›ÞHŒˆ›ØÝ\ØX›OH™˜[ÙH‚ˆÚ\˜ÛHÞHŒŒˆÞOHŒˆˆHŒLHˆÏ‚ˆÚ\˜ÛHÞHŒŒˆÞOHŒˆˆHŽˆÏ‚ˆ]H“LMLËM›ÈMˆ[M‹MV“LMLL“LMÈ›ÈËMLŒLHˆÏ‚ˆÜÝ™Ï‚ˆÙ]‚ˆ[YH]][YOHŒŒËLLÕLNŒŒLNŒÝ[YO‚ˆÏÙ\™[[ÛšXOÚÏ‚ˆ\]pëHYØH[”ðëK]ZY\›ÈHÜ‚ˆØ\XÛO‚ˆ\XÛHÛ\ÜÏH[Y[[™W×Ú][H‚ˆ]ˆÛ\ÜÏH[Y[[™W×ÚXÛÛˆˆ\šXKZY[HYH‚ˆÝ™ÈÛ\ÜÏH[Y[[™W×Ü›ØYˆšY]Ð›ÞHŒÌˆˆ›ØÝ\ØX›OH™˜[ÙH‚ˆ]H“NÌPÌÈˆŒHLˆNÌŒÈMÈLÈŒÈPÌŒˆMHHNHˆÏ‚ˆ]H“LÌˆÌPÌˆMˆŒˆŒNPÌHMHÍHMÌHPÌŽHŒÈˆHˆÏ‚ˆ]Û\ÜÏH[Y[[™W×Ü›ØYXÙ[™HˆH“LŒÌPÌMˆLŒˆMˆNPÌŒˆMˆÌHMÈPÌˆNHHŒˆHˆÏ‚ˆÜÝ™Ï‚ˆÙ]‚ˆ[YH]][YOHŒŒËLLÕLŽŒÌŒLŽŒÌÝ[YO‚ˆÏ]]Ø°îœÏÚÏ‚ˆ”Ø[YH[]]Ø°îœËÜ‚ˆØ\XÛO‚ˆ\XÛHÛ\ÜÏH[Y[[™W×Ú][H‚ˆ]ˆÛ\ÜÏH[Y[[™W×ÚXÛÛˆˆ\šXKZY[HYH‚ˆÝ™ÈÛ\ÜÏH[Y[[™W×ØÛØÚÝZ[ˆšY]Ð›ÞHŒˆ›ØÝ\ØX›OH™˜[ÙH‚ˆÚ\˜ÛHÞHŒÌHˆÞOHŽHˆHˆˆÏ‚ˆ]H“LÌHÝŒL“LKŽ›L“LKŽL“Í‹ŒˆˆˆÏ‚ˆ]H“MLXÍKLˆŒ‹LˆŽËLˆ‹MÈËLMÔÍˆLÈLVˆˆÏ‚ˆ]H“MHL˜ÌÈˆÈLLÈLXÍ‹LHLMHLËLLSLNŒÝŒLLLˆÍ˜ÌËLˆKLˆLˆˆÏ‚ˆÜÝ™Ï‚ˆÙ]‚ˆ[YH]][YOHŒŒËLLÕMŒŒMŒÝ[YO‚ˆÏðìØÝ[ÚÏ‚ˆœš[™\ËXœ˜^›ÜÈH™Y[˜ÝY[›ÜËÜ‚ˆØ\XÛO‚ˆ\XÛHÛ\ÜÏH[Y[[™W×Ú][H‚ˆ]ˆÛ\ÜÏH[Y[[™W×ÚXÛÛˆˆ\šXKZY[HYH‚ˆÝ™ÈÛ\ÜÏH[Y[[™W×ØÝ]\žHˆšY]Ð›ÞHŒˆ›ØÝ\ØX›OH™˜[ÙH‚ˆ]H“MˆÝŽSLLÝŽSLMÝŽSMˆL˜ÌÈKHH\ÍLˆMSLLMÝŒŒˆÏ‚ˆ]H“LŒˆØËLÈKMLKMMÛÓLŒˆÝŒÍˆÏ‚ˆ]H“LÌHMØÌÈKLÈKMÜËL‹MËMKMÜËMHËMHÜÌˆÈHÖ›LŒŒˆÏ‚ˆÜÝ™Ï‚ˆÙ]‚ˆ[YH]][YOHŒŒËLLÕMNŒÌŒMNŒÌÝ[YO‚ˆÏÛÛZYOÚÏ‚ˆ•[˜HY\ØH\˜HÙ[Xœ˜\ˆ[ÜËÜ‚ˆØ\XÛO‚ˆ\XÛHÛ\ÜÏH[Y[[™W×Ú][H‚ˆ]ˆÛ\ÜÏH[Y[[™W×ÚXÛÛˆˆ\šXKZY[HYH‚ˆÝ™ÈÛ\ÜÏH[Y[[™W×Ù\ØÛÈˆšY]Ð›ÞHŒˆ›ØÝ\ØX›OH™˜[ÙH‚ˆ]H“LŒ]ÓLMˆLÌKLˆ‹LÈLÜÌÈHÈˆÏ‚ˆÚ\˜ÛHÞHŒŒˆÞOHŒŒÈˆHŒLÈˆÏ‚ˆ]H“LŒLËMÈKMÈŒH“LŒLÍÈHÈŒH“LŒLŒˆˆÏ‚ˆ]H“NHM˜ÍˆMˆŒˆMÈŒ˜ÍÈÈNHÈˆNŽÍÈÈMÈÈLLHÌØÍHˆLÈˆNˆÏ‚ˆ]H“LÍÌËLHMÌÈHÌLÈKMMËLÈMLKMM“MHLXÌ‹LHËLÈØÌˆÈHÈØÌLˆKLÈËLØËLˆLËLKLËLÖˆˆÏ‚ˆÚ\˜ÛHÛ\ÜÏH[Y[[™W×Ù\ØÛËYÝˆÞHŒÍHˆÞOHŒMÈˆHŒHˆÏ‚ˆÜÝ™Ï‚ˆÙ]‚ˆ[YH]][YOHŒŒËLLÕNŒŒNŒÝ[YO‚ˆÏ‘šY\ÝOÚÏ‚ˆZÜ˜HðëNˆ0¨XH\›ÈÙÈOÜ‚ˆØ\XÛO‚ˆÙ]‚ˆÙ]‚ˆÜÙXÝ[Û‚‚ˆÙXÝ[ÛˆÛ\ÜÏH™]Z[ÈÙXÝ[Ûˆ‚ˆ]ˆÛ\ÜÏH˜ÛÛZ[™\ˆ‚ˆ]ˆÛ\ÜÏH™]Z[××ÚXY[™È‚ˆÛ\ÜÏH™^YXœ›ÝÈ’[™›Ü›XXÚpìÛˆ°èXÝXØOÜ‚ˆˆÛ\ÜÏHœÙXÝ[Û‹]]H”\˜H\Ùœ]\ˆÚ[ˆ™[ØÝ\XÚ[Û™\ÏÚ‚ˆÙ]‚‚ˆ]ˆÛ\ÜÏH™]Z[××ÙÜšY‚ˆ\XÛHÛ\ÜÏH™]Z[XØ\™‚ˆÏ]]Ø°îœÏÚÏ‚ˆ‚ˆÝ›Û™Ï”Ø[YNˆLŽŒÌÜÝ›Û™ÏœˆÏ‚ˆØ[HšXÝÜšXHHÜÈ0à[™Ù[\ÏœˆÏ‚ˆŽLMÚ\œšX[˜Kpè[YØOœˆÏœˆÏ‚ˆÝ›Û™Ï•Y[NÜÝ›Û™ÏˆÜˆ]\›Z[˜\‚ˆÜ‚ˆH™YHšÎ‹ËÛX\Ë˜\™ÛÛË™ÛÔU–XœÝÚœQž–Èˆ\™Ù]H—Ø›[šÈˆ™[H››ÛÜ[™\ˆ›Ü™Y™\œ™\ˆ‚ˆ™\ˆØ[YBˆØO‚ˆØ\XÛO‚ˆ\XÛHÛ\ÜÏH™]Z[XØ\™]Z[XØ\™KXXØÙ[‚ˆÜ[ˆÛ\ÜÏH™]Z[XØ\™×Û[X™\ˆŒÜÜ[‚ˆÏ[Ú˜[ZY[ÏÚÏ‚ˆ‚ˆ[ˆØ\ÛÈH[™\ˆZYYÈHX\™X\H\˜[HHY[H[ˆ[]]Ø°îœË\]pëHÙ°è\È[˜ÛÛ˜\ˆ[ˆÚ][ÂˆÛ™H\ØØ[œØ\ˆ[˜H™^ˆXØX™HHšY\ÝK‚ˆÜ‚ˆH™YHšÎ‹ËÝÝÝË˜›ÛÚÚ[™Ë˜ÛÛKÜÙX\˜Ú™\Ý[Ë™\Ëš[ÜÜÏPŠØ›ÝJÒÝ[
+ÓJÕšIPÌÉPŒ]Y[JÉLŠÔÜI˜[\ÙY™ÛÏLI˜[\ÛX™[[\Û‹J—ØØÞVMÊ–šQšŠŒÓJœ[ÝËMÎNNMNÌNL‰LÐ]ZÝÙMÎNNNÍŒÌŒ	LÐ[ØËLMÌ	LÐ[™[ÉLÐ[]ILÐ[ŽLŒŒILÐYXÉLÐXÚYLNMLLÉLÐXYÚYLÎNÌŽÍŽMÌM	LÐXÛÚYŒŒ˜NMŽLYLXØÌÙ˜LL™˜ÍÌLÎX‰˜[\ØZYLŒÍŽMŒI˜[\Û[™ÏY\É˜[\ÜØLI˜[\ÜÜ˜×Ù[[O\Ø‰˜[\ÜÜ˜ÏZ[™^	˜[\Ù\ÝÚYPÚRÍULP˜ÙÌÚÛÛ[•VI˜[\Ù\ÝÝ\O[]Û™É˜[\Û]]YOLÍ‹ŽÍLŽLÉ˜[\ÛÛ™Ú]YOKMŒMNMÉ˜[\ØX×ÛY]ORPQ[ÐZ’PÖ–˜PÛ’›ÌÔšš›”ILÑ	˜[\ØX×ÜÜÚ][ÛLI˜[\ØX×ØÛXÚ×Ý\OYÉ˜[\ØX×Û[™ØÛÙOY\É˜[\ØX×ÜÝYÙÙ\Ý[Û—Û\ÝÛ[™ÝL‰˜[\ÜÙX\˜ÚÜÙ[XÝY]YI˜[\ÜÙX\˜ÚÜYÙ]šY]×ÚYYYÍŒY˜XL˜ÙŒÍYŽMÌ˜ÍÉ˜[\ØÚXÚÚ[LŒËLLÉ˜[\ØÚXÚÛÝ]LŒËLL	˜[\ÙÜ›Ý\ØY[ÏL‰˜[\Û›×Ü›ÛÛ\ÏLI˜[\ÙÜ›Ý\ØÚ[™[Lˆ\™Ù]H—Ø›[šÈˆ™[H››ÛÜ[™\ˆ›Ü™Y™\œ™\ˆ‚ˆ™\ˆ[Ú˜[ZY[ÂˆØO‚ˆØ\XÛO‚ˆÙ]‚ˆÙ]‚ˆÜÙXÝ[Û‚‚ˆÙXÝ[ÛˆÛ\ÜÏHœœÝœÙXÝ[ÛˆˆYH˜ÛÛ™š\›XXÚ[Ûˆ‚ˆ]ˆÛ\ÜÏH˜ÛÛZ[™\ˆÛÛZ[™\‹K[˜\œ›ÝÈœÝœ×ØÛÛ[‚ˆÜ[ˆÛ\ÜÏH˜›Ý[šXØ[›Ý[šXØ[K[YÚˆ\šXKZY[HYH¸§iÜÜ[‚ˆÛ\ÜÏH™^YXœ›ÝÈ^YXœ›ÝËK[YÚ[\È[ÌH›ÝšY[Xœ™NÜ‚ˆ°¯Ó›ÜÈXÛÛ\pìX\ÏÏÚ‚ˆ”™\Ü0ìÛ™[›ÜÈH\ÝHœ™]™H›Ü›][\š[È]YH›ÈH]˜\°èHpè\ÈHˆZ[]ÜËÜ‚ˆHÛ\ÜÏH˜]Ûˆ]Û‹K[YÚˆ™YHšÎ‹ËÙØÜË™ÛÛÙÛK˜ÛÛKÙ›Ü›\ËÙÌKTM–RMŽØÚ\ËZ×ÙYKS”ÜÕ^TTRTØÍ‘‹KUÝÎÓLËÝšY]Ù›Ü›OÝÏM˜M™ŽYI˜[\ÙY]Ü™\]Y\ÝY]YHˆ\™Ù]H—Ø›[šÈˆ™[H››ÛÜ[™\ˆ›Ü™Y™\œ™\ˆ‚ˆÛÛ™š\›X\ˆ\Ú\Ý[˜ÚXBˆØO‚ˆÙ]‚ˆÜÙXÝ[Û‚ˆÛXZ[‚‚ˆ›ÛÝ\ˆÛ\ÜÏH™›ÛÝ\ˆ‚ˆHÛ\ÜÏH™›ÛÝ\—×Û˜[Y\Èˆ™YHˆÚ[šXÚ[È[™™XHÜ[žOÜÜ[ˆ›ÜðêOØO‚ˆŒÈHXœš[HŒÈ0­Èpè[YØOÜ‚ˆÙ›ÛÝ\‚‚ˆØÜš\Ü˜ÏHœØÜš\šœÏÝLŒŒLK\ÛÛ™ËM\ÈÜØÜš\‚ˆØ›ÙO‚Ú[‚
