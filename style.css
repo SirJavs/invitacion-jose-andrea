@@ -945,6 +945,22 @@ a {
   stroke-linejoin: round;
 }
 
+.timeline__disco {
+  width: 31px;
+  height: 31px;
+  overflow: visible;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.15;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.timeline__disco-dot {
+  fill: currentColor;
+  stroke: none;
+}
+
 .timeline time {
   color: var(--sage);
   font-size: 0.72rem;
