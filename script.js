@@ -15,6 +15,8 @@ let musicShouldPlay = false;
 let musicIsPlaying = false;
 let musicIsMuted = false;
 let invitationOpened = false;
+const musicVideoId = "gn7HgzOEdHU";
+const musicStartSeconds = 41;
 
 function updateMusicControls() {
   playSymbol.textContent = musicIsPlaying ? "Ⅱ" : "▶";
@@ -27,13 +29,12 @@ window.onYouTubeIframeAPIReady = function () {
   musicPlayer = new YT.Player("youtube-player", {
     width: "1",
     height: "1",
-    videoId: "9YcrMk_cZyI",
+    videoId: musicVideoId,
     playerVars: {
       autoplay: 0,
       controls: 0,
       disablekb: 1,
-      loop: 1,
-      playlist: "9YcrMk_cZyI",
+      start: musicStartSeconds,
       playsinline: 1,
       rel: 0,
     },
@@ -46,6 +47,11 @@ window.onYouTubeIframeAPIReady = function () {
         updateMusicControls();
       },
       onStateChange: (event) => {
+        if (event.data === YT.PlayerState.ENDED && musicShouldPlay) {
+          musicPlayer.seekTo(musicStartSeconds, true);
+          musicPlayer.playVideo();
+          return;
+        }
         musicIsPlaying = event.data === YT.PlayerState.PLAYING;
         updateMusicControls();
       },
