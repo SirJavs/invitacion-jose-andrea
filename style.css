@@ -896,13 +896,13 @@ a {
   left: -28px;
 }
 
-.timeline__rings {
-  width: 32px;
-  height: 26px;
+.timeline__ring {
+  width: 29px;
+  height: 29px;
   overflow: visible;
   fill: none;
   stroke: currentColor;
-  stroke-width: 1.6;
+  stroke-width: 1.45;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
