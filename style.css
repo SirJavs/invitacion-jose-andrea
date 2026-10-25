@@ -273,10 +273,8 @@ body.is-intro-active {
   inset: 0;
   z-index: 1;
   background:
-    radial-gradient(circle, rgba(112, 83, 44, 0.1) 0 0.6px, transparent 0.9px) 0 0 / 5px 5px,
-    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.13) 0 1px, rgba(117, 87, 49, 0.045) 1px 2px, transparent 2px 5px),
-    repeating-linear-gradient(90deg, transparent 0 46px, rgba(117, 87, 49, 0.055) 46px 47px, rgba(255, 255, 255, 0.1) 47px 48px),
-    linear-gradient(145deg, #e5d6bd, #ccb895);
+    linear-gradient(145deg, rgba(255, 253, 248, 0.08), rgba(122, 110, 94, 0.12)),
+    url("envelope-paper-texture.jpg") center / cover no-repeat;
 }
 
 .envelope__letter {
@@ -342,10 +340,8 @@ body.is-intro-active {
   inset: 0;
   z-index: 6;
   background:
-    radial-gradient(circle, rgba(112, 83, 44, 0.1) 0 0.6px, transparent 0.9px) 0 0 / 5px 5px,
-    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.14) 0 1px, rgba(117, 87, 49, 0.05) 1px 2px, transparent 2px 5px),
-    repeating-linear-gradient(90deg, transparent 0 46px, rgba(117, 87, 49, 0.055) 46px 47px, rgba(255, 255, 255, 0.11) 47px 48px),
-    linear-gradient(155deg, #f0e5d2, #cdb591);
+    linear-gradient(155deg, rgba(255, 255, 255, 0.18), rgba(118, 105, 88, 0.08)),
+    url("envelope-paper-texture.jpg") center / cover no-repeat;
   clip-path: polygon(0 0, 100% 0, 50% 58%);
   transform: rotateX(0deg);
   transform-origin: top center;
@@ -361,28 +357,22 @@ body.is-intro-active {
 
 .envelope__front--left {
   background:
-    radial-gradient(circle, rgba(112, 83, 44, 0.09) 0 0.6px, transparent 0.9px) 0 0 / 5px 5px,
-    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.12) 0 1px, rgba(117, 87, 49, 0.045) 1px 2px, transparent 2px 5px),
-    repeating-linear-gradient(90deg, transparent 0 46px, rgba(117, 87, 49, 0.05) 46px 47px, rgba(255, 255, 255, 0.1) 47px 48px),
-    linear-gradient(60deg, #ddcbae, #ebdeca);
+    linear-gradient(60deg, rgba(118, 105, 88, 0.11), rgba(255, 255, 255, 0.08)),
+    url("envelope-paper-texture.jpg") center / cover no-repeat;
   clip-path: polygon(0 0, 55% 52%, 0 100%);
 }
 
 .envelope__front--right {
   background:
-    radial-gradient(circle, rgba(112, 83, 44, 0.09) 0 0.6px, transparent 0.9px) 0 0 / 5px 5px,
-    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.12) 0 1px, rgba(117, 87, 49, 0.045) 1px 2px, transparent 2px 5px),
-    repeating-linear-gradient(90deg, transparent 0 46px, rgba(117, 87, 49, 0.05) 46px 47px, rgba(255, 255, 255, 0.1) 47px 48px),
-    linear-gradient(-60deg, #dcc8aa, #ede0cc);
+    linear-gradient(-60deg, rgba(118, 105, 88, 0.1), rgba(255, 255, 255, 0.1)),
+    url("envelope-paper-texture.jpg") center / cover no-repeat;
   clip-path: polygon(100% 0, 45% 52%, 100% 100%);
 }
 
 .envelope__front--bottom {
   background:
-    radial-gradient(circle, rgba(112, 83, 44, 0.09) 0 0.6px, transparent 0.9px) 0 0 / 5px 5px,
-    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.12) 0 1px, rgba(117, 87, 49, 0.045) 1px 2px, transparent 2px 5px),
-    repeating-linear-gradient(90deg, transparent 0 46px, rgba(117, 87, 49, 0.05) 46px 47px, rgba(255, 255, 255, 0.1) 47px 48px),
-    linear-gradient(0deg, #e1cfb4, #eee3d1);
+    linear-gradient(0deg, rgba(118, 105, 88, 0.08), rgba(255, 255, 255, 0.12)),
+    url("envelope-paper-texture.jpg") center / cover no-repeat;
   clip-path: polygon(0 100%, 50% 45%, 100% 100%);
 }
 
