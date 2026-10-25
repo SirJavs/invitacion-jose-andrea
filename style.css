@@ -719,7 +719,7 @@ a {
 }
 
 .story__content .eyebrow {
-  text-align: left;
+  text-align: center;
 }
 
 .story__content > p:not(.eyebrow, .signature) {
