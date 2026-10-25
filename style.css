@@ -934,6 +934,17 @@ a {
   stroke-linejoin: round;
 }
 
+.timeline__cutlery {
+  width: 29px;
+  height: 29px;
+  overflow: visible;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.35;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .timeline time {
   color: var(--sage);
   font-size: 0.72rem;
